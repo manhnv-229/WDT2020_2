@@ -1,0 +1,12 @@
+﻿@import url('../layout/content.css');
+@import url('../layout/header.css');
+@import url('../layout/menu.css');
+body {
+    font-family: 'GoogleSans-Black';
+    font-size: 13px;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GoogleSans-Black';
+    src: url('../confront/font/GoogleSans-Black.otf') format('opentype');
+}
