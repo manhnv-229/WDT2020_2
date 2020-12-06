@@ -1,0 +1,79 @@
+﻿.content {
+	position: absolute;
+	top: 48px;
+	right: 0px;
+	width: calc(100% - 200px);
+	height: calc(100% - 48px);
+	box-sizing: border-box; /*tăng padding hay border không làm thay đổi size*/
+	padding: 16px;
+}
+	.content .content-header {
+		height: 40px;
+		font-size: 24px;
+		align-items: center;
+	}
+		.content .content-header .content-header-left {
+			float: left;
+			display: flex;
+		}
+		.content .content-header .content-header-right {
+			float: right;
+			display: flex;
+		}
+	.content .content-form {
+		height: 60px;
+		display: flex;
+		align-items: center;
+	}
+
+	.content .content-footer {
+		position: relative;
+		left:0;
+		height: 60px;
+		width: 100%;
+		right: 16px;
+		display: flex;
+		align-items: center;
+	}
+		.content .content-footer .content-footer-text {
+			position: relative;
+			left: 0px;
+			width: 30%;
+		}
+		.content .content-footer .content-footer-page {
+			position: relative;
+			left: 0px;
+			display: flex;
+			height: 100%;
+			width: 40%;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+		}
+			.content .content-footer .content-footer-page img {
+				height: 30px;
+				width: 30px;
+				background-color: #e5e5e5;
+				margin-right: 10px;
+				border: 1px solid #BBBBBB;
+				border-radius: 10%;
+				cursor: pointer;
+			}
+			.content .content-footer .content-footer-page img:hover{
+				background-color: #2FBE8E;
+			}
+			.content .content-footer .content-footer-page .page-number {
+				position: relative;
+				height: 26px;
+				width: 35px;
+				text-align: center;
+				padding-top: 8px;
+				margin-right: 10px;
+				border: 1px solid #BBBBBB;
+				border-radius: 50%;
+				background-color: #E5E5E5;
+				cursor: pointer;
+			}
+			.content .content-footer .content-footer-page .page-number:hover{
+				background-color: #2FBE8E;
+			}
