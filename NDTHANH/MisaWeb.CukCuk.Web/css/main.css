@@ -1,0 +1,31 @@
+﻿/*phần dùng chung cho cả trang web nhu font chu, kích thước chữ, layout dùng chung*/
+@import url('layout/constent.css');
+@import url('layout/header.css');
+@import url('layout/menu.css');
+.body {
+    font-family: GoogleSans-BlackItalic;
+    font-size: 13px;
+}
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-BlackItalic';
+    src: url('../content/font/GoogleSans-BlackItalic.otf') format('opentype');
+}
+.panel-left{
+    width: 200px;
+    height: 100vh;
+}
+.panel-right{
+    position: absolute;
+    left:200px;
+    top:0;
+    width:calc(100% - 200px);
+    height: 100vh;
+}
