@@ -1,0 +1,129 @@
+﻿.content {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+}
+
+    .content .content__header {
+        display: flex;
+    }
+
+        .content .content__header .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+    .content .content__filter {
+        position: absolute;
+        top: 60px;
+        display: flex;
+        width: calc(100% - 32px);
+        align-items: center;
+    }
+
+    .content .content__grid {
+        position: absolute;
+        top: 100px;
+        width: calc(100% - 32px);
+        height: calc(100% - 56px - 100px - 32px);
+        overflow: scroll;
+    }
+
+table th, td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 8px;
+    text-align: left;
+}
+
+table tr:hover {
+    background-color: #e5e5e5;
+}
+
+tbody {
+    height: 200px;
+    overflow: scroll;
+}
+
+.content .content__paging {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+    .content .content__paging .paging-left {
+        position: absolute;
+        left: 10px;
+    }
+
+    .content .content__paging .paging-middle {
+        display: flex;
+        width: 160px;
+        height: 100%;
+        align-items: center;
+    }
+
+        .content .content__paging .paging-middle .icon-middle {
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            border-radius: 45px;
+            text-align:center;
+        }
+
+            .content .content__paging .paging-middle .icon-middle:hover {
+                background-color: #e5e5e5;
+            }
+
+.icon-1 {
+    background-image: url('/content/icon/btn-firstpage.svg');
+}
+
+.icon-2 {
+    background-image: url('/content/icon/btn-prev-page.svg');
+}
+
+.icon-3 {
+    background-color: #019160;
+    border: 1px solid #019160;
+    color: #ffffff;
+}
+
+.icon-4 {
+    border: 1px solid #808080;
+    margin-left: 1px;
+}
+
+.icon-5 {
+    border: 1px solid #808080;
+    margin-left: 1px;
+}
+
+.icon-6 {
+    border: 1px solid #808080;
+    margin-left: 1px;
+}
+
+.icon-7 {
+    background-image: url('/content/icon/btn-next-page.svg');
+}
+
+.icon-8 {
+    background-image: url('/content/icon/btn-lastpage.svg');
+}
+
+.content .content__paging .paging-right {
+    position: absolute;
+    right: 10px;
+}

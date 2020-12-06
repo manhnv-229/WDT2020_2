@@ -1,0 +1,56 @@
+﻿.misa-btn {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #019160;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 13px;
+    color: #ffffff;
+    align-items: center;
+    border: none;
+    cursor:pointer;
+}
+
+    .misa-btn:hover {
+        background-color: #2FBE8E;
+    }
+    .misa-btn .icon-btn {
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-position: center;
+    }
+
+.icon-add {
+    background-image: url('/content/icon/add.png');
+}
+
+.misa-btn .text-btn{
+    margin-left: 8px;
+}
+
+.misa-btn-old {
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    align-items:center;
+    width: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.misa-btn-old:hover{
+    background-color: #e5e5e5;
+}
+
+.icon-refresh {
+    background-size: 16px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/content/icon/refresh.png');
+}
