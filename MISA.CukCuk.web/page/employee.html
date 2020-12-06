@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MISA Cuk Cuk - Phần mềm quản lý nhà hàng</title>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/page/employee.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/87cb69237f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <div class="icon-bar"></div>
+            <div class="logo-page"></div> 
+        </div>
+        <div class="menu__content">
+            <div class="menu__content-item">
+                <div class="menu__content-icon" style="background-image: url('../content/icon/document-online.png');"></div>
+                <div class="menu__content-text">Lập hồ sơ điện tử</div>
+            </div>
+            <div class="menu__content-item">
+                <div class="menu__content-icon" style="background-image: url('../content/icon/option.png');"></div>
+                <div class="menu__content-text">Lập hồ sơ giấy</div>
+            </div>
+            <div class="menu__content-item">
+                <div class="menu__content-icon" style="background-image: url('../content/icon/report.png');"></div>
+                <div class="menu__content-text">Theo dõi cho</div>
+            </div>
+            <div class="menu__content-item">
+                <div class="menu__content-icon" style="background-image: url('../content/icon/dashboard.png');" ></div>
+                <div class="menu__content-text">Theo dõi đóng</div>
+            </div>
+            <div class="menu__content-item">
+                <div class="menu__content-icon" style="background-image: url('../content/icon/dic-employee.png');"></div>
+                <div class="menu__content-text">Theo dõi lao động</div>
+            </div>
+            <div class="menu__content-item">
+                <div class="menu__content-icon" style="background-image: url('../content/icon/setting.png');"></div>
+                <div class="menu__content-text">Thiết lập</div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-left-text">Công ty cổ phần MISA TEST BHXH</div>
+            <div class="header-left-button">
+                    <button class="button-icon"><i class="fas fa-chevron-down"></i></button>
+                    <div class="button-text">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="header-right-avt"></div>
+            <div class="header-right-text">Nguyễn Thị Thiêm</div>
+            <div class="header-right-icon"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <div class="content-header-left">Quản lý lao động</div>
+            <div class="content-header-right">
+                <button class="content-header-right-button button1" type="button" onclick="alert('Hello world!')">
+                    <img class="header-button1-icon" src="../content/icon/radio@2x.png" />
+                    <div style="color: #01B075;font-family: GoogleSans-Regular; margin-left:10px;">Đồng bộ từ HRM</div>
+                </button>
+                <button class="content-header-right-button button2" type="button" onclick="alert('Hello world!')">
+                    <img class="header-button2-icon" src="../content/icon/add.png" />
+                    <div style="color: #ffffff;font-family: GoogleSans-Regular; margin-left:10px;" >Thêm lao động</div>
+                </button>
+                <button class="content-header-right-button button3"><i class="fas fa-chevron-down" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+        <form class="content-form">
+                <input class="content-form1" type="text" placeholder="Tìm kiếm theo mã nhân viên, họ tên" id="fname" name="fname"><br>
+        </form>
+        <div class="content-table">
+            <table>
+                <tr>
+                    <th style="width: 3%;">STT</th>
+                    <th style="width: 8%;">Mã nhân viên</th>
+                    <th style="width: 15%;">Họ và tên</th>
+                    <th style="width: 8%;">Mã số BHXH</th>
+                    <th style="width: 5%;">Giới tính</th>
+                    <th style="width: 12%;">Vị trí/chức vụ</th>
+                    <th style="width: 12%;">Bộ phân/phòng ban</th>
+                    <th style="width: 15%;">Hệ số/Mức lương đóng</th>
+                    <th style="width: 12%;">Trạng thái tham gia</thstyle="width:>
+                    <th>Bệnh viện</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>MS03-09</td>
+                    <td>Nguyễn Thị Thiêm</td>
+                    <td>122383562</td>
+                    <td>Nữ</td>
+                    <td>Nhân viên</td>
+                    <td>Văn phòng Hà Nội</td>
+                    <td>5,500,000</td>
+                    <td>Đang tham gia</td>
+                    <td>Bệnh viện đa khoa Hà Nội</td>
+                </tr>
+            </table>
+        </div>
+        <div class="content-footer">
+            <div class="content-footer-text">Hiển thị danh sách...lao động</div>
+            <div class="content-footer-page">
+                <img src="../content/icon/btn-firstpage.svg" />
+                <img src="../content/icon/btn-prev-page.svg" />
+                <div class="page-number">1</div>
+                <div class="page-number">2</div>
+                <div class="page-number">3</div>
+                <div class="page-number">4</div>
+                <img src="../content/icon/btn-next-page.svg" />
+                <img src="../content/icon/btn-lastpage.svg" />
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

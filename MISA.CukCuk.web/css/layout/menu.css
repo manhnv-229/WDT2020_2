@@ -1,0 +1,58 @@
+﻿.menu {
+	width: 200px;
+	height: 100vh;
+	background-color: #ffffff;
+	box-sizing: border-box; /*tăng padding hay border không làm thay đổi size*/
+	border-right: 1px solid #E5E5E5;
+}
+
+	.menu .logo {
+		height: 48px;
+		display: flex;
+		align-items: center; /*căn giữa theo chiều dọc*/
+		justify-content: center; /*căn giữa theo chiều ngang*/
+		cursor: pointer; /*chỉ chuột hình bàn tay*/
+	}
+
+		.menu .logo .icon-bar {
+			width: 24px;
+			height: 24px;
+			margin-left: 16px;
+			background-image: url('../../content/img/toggle.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.menu .logo .logo-page {
+			height: 24px;
+			width: calc(100% - 24px);
+			background-image: url('../../content/img/cukcuk-logo.png');
+			margin-left: 10px;
+			background-size: contain;
+			background-repeat: no-repeat; /*ảnh không lặp*/
+		}
+	
+	.menu .menu__content .menu__content-item {
+		display: flex;
+		height: 44px;
+		align-items: center;
+		cursor: pointer; /*chỉ chuột hình bàn tay*/
+	}
+	.menu .menu__content .menu__content-icon {
+		width: 20px;
+		height: 20px;
+		margin-left: 16px;
+		background-size: cover;
+	}
+	.menu .menu__content .menu__content-item:hover {
+		background-color: #2FBE8E;
+	} /*di chuột qua*/
+	.menu .menu__content .menu__content-item:active {
+		background-color: #019160;
+	} /*kích chuột*/
+	.menu .menu__content .menu__content-item:focus {
+		background-color: #EBF9F4;
+	} /*kích chuột xong/đang kích chuột*/
+	.menu .menu__content .menu__content-text {
+		padding-left: 10px;
+	}

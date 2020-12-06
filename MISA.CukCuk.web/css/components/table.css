@@ -1,0 +1,26 @@
+﻿
+.content .content-table {
+    background-color: #ffffff;
+    width: 100%;
+    height: calc(100% - 144px);
+    overflow: auto;
+}
+    .content .content-table table {
+        border-collapse: collapse;
+        width: 100%;
+        height: calc(100% - 150px);
+    }
+        .content .content-table table tr, th {
+            height: 48px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .content .content-table table th {
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            background-color: #ffffff;
+            text-align: left;
+        } /*tiêu đề giữ nguyên khi cuộn*/
+        /*.content .content-table table tr:nth-child(even){
+            background-color: #E9EBEE;
+         }*/
