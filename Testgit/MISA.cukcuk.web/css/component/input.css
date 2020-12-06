@@ -1,0 +1,8 @@
+﻿.inp {
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
