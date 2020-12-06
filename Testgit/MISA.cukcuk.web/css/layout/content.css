@@ -1,0 +1,174 @@
+﻿
+.content {
+    width: 100%;
+    height: calc(100vh - 60px);
+    /*padding-left: 16px;*/
+}
+
+    .content .top_of_content_1 {
+        display: flex;
+        align-items: center;
+        height: 65px;
+    }
+
+        .content .top_of_content_1 p {
+            font-size: 20px;
+            margin-left: 16px;
+        }
+
+        .content .top_of_content_1 .btn_add_customer {
+            position: absolute;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .content .top_of_content_1 .icon_add_customer {
+            background-image: url('../../content/icon/add.png');
+            display: inline-block;
+        }
+
+    .content .top_of_content_2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .content .top_of_content_2 .input_icon {
+            height: 40px;
+            width: 250px;
+            margin-left: 16px;
+        }
+
+            .content .top_of_content_2 .input_icon .inp_search {
+                width: 235px;
+            }
+
+            .content .top_of_content_2 .input_icon .icon_search {
+                background-image: url(../../content/icon/search.png);
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                left: 33px;
+                top: 138px;
+            }
+
+        .content .top_of_content_2 .btn_refresh {
+            position: absolute;
+            right: 30px;
+            background-color: #ffffff;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+            .content .top_of_content_2 .btn_refresh:hover {
+                background-color: #e9ebee;
+            }
+
+            .content .top_of_content_2 .btn_refresh .icon_refresh {
+                background-image: url('../../content/icon/refresh.png');
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                text-align: center;
+                margin-left: 5px;
+            }
+
+
+    .content .table_customer {
+        /*background-color: #b6ff00;*/
+        width: calc(100% - 16px);
+        height: calc(100vh - 60px - 65px - 60px - 56px);
+        overflow: auto;
+        margin-left: 16px;
+        border-bottom: 3px solid #989898;
+        padding-right: 16px;
+    }
+
+        .content .table_customer table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .content .table_customer th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content .table_customer thead {
+        }
+
+        .content .table_customer tbody tr:hover {
+            background-color: #e3e3e3;
+        }
+
+    .content .paging {
+        padding-left: 16px;
+        padding-right: 30px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 56px;
+        display: grid;
+        grid-template-columns: 200px auto 120px;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+        .content .paging .control_page {
+            display: flex;
+            align-items: center;
+        }
+
+            .content .paging .control_page > div {
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            .content .paging .control_page .icon_page {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background-size: contain;
+            }
+
+                .content .paging .control_page .icon_page:hover {
+                    background-color: #e3e3e3;
+                    border: 1px solid #989898;
+                }
+
+            .content .paging .control_page .page {
+                background-color: #ffffff;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #989898;
+                border-radius: 50%;
+                text-align: center;
+            }
+
+                .content .paging .control_page .page:hover {
+                    background-color: #e3e3e3;
+                }
+
+.icon_nextpage {
+    background-image: url('../../content/icon/btn-next-page.svg');
+}
+
+.icon_prevpage {
+    background-image: url('../../content/icon/btn-prev-page.svg');
+}
+
+.icon_firstpage {
+    background-image: url('../../content/icon/btn-firstpage.svg');
+}
+
+.icon_lastpage {
+    background-image: url('../../content/icon/btn-lastpage.svg');
+}
