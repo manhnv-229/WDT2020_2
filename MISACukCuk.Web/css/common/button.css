@@ -1,0 +1,48 @@
+.btn-style{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #019160;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 13px;
+    color: #fff;
+    font-family: GoogleSans-Regular;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.btn-style:hover{
+    background-color: #2fbe8e;
+}
+
+.btn-style .btn-text{
+    margin-left: 8px;
+
+}
+
+.btn-icon{
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.add-icon{
+    background-image: url(../../content/icon/add.png);
+}
+
+.btn-search{
+    background-image: url(../../content/icon/search.png);
+}
+
+.update-btn{
+    background-image: url(../../content/icon/refresh.png);
+}
+
+
+.refresh-btn:hover{
+    background-color: #f4f4f4;
+}

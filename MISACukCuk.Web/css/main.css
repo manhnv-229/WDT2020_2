@@ -1,0 +1,88 @@
+@import url(layout/content.css);
+@import url(layout/header.css);
+@import url(layout/menu.css);
+@import url(common/button.css);
+@import url(common/grid.css);
+@import url(common/pagination.css);
+
+body {
+    font-family: GoogleSans-Regular;
+    font-size: 13px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Italic';
+    src: url('../content/font/GoogleSans-Italic.otf') format('opentype');
+}
+
+.panel-left{
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid #BBB;
+}
+
+.panel-right{
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: calc(100% - 200px);
+    height: 100vh;
+}
+
+.panel-left .logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+.logo .expand-icon{
+    width: 30px;
+    height: 30px;
+    background-image: url('../content/img/toggle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo .logo-page{
+    margin-left: 10px;
+    width: 100%;
+    height: 34px;
+    background-image: url('../content/img/cukcuk-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index:1;
+    opacity: 0.4;
+}
+
+.prompt{
+    position: fixed;
+    left: 30vw;
+    top: 20vh;
+    width: 40vw;
+    height: 50vh;
+    background-color: #fff;
+    z-index:2;
+    border-radius: 4px;
+}
