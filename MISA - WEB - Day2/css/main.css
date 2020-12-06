@@ -1,0 +1,37 @@
+﻿@import url('layout/content.css');
+@import url('layout/header.css');
+@import url('layout/nvbar.css');
+
+body {
+    font-family: fantasy;
+    font-size : 13px;
+    margin: 0;
+}
+@font-face {
+    font-family: 'GoogleSans-Black';
+    src: url('../content/font/GoogleSans-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-BlackItalic';
+    src: url('../content/font/GoogleSans-BlackItalic.otf') format('opentype');
+}
+.main{
+
+}
+.panel-left {
+    width: 200px;
+    height: 100vh;
+    background-color: aqua;
+}
+.panel-right{
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: calc(100% - 200px);
+    height: 100vh;
+    background-color: brown;
+}
