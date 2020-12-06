@@ -1,0 +1,16 @@
+﻿input {
+    border: 1px solid;
+    border-color: #bbbbbb;
+    border-radius: 4px;
+    height: 36px;
+    width: 200px;
+    padding-left: 40px
+}
+
+.icon-search {
+    background-image: url('/content/icon/search.png');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 16px;
+}
+

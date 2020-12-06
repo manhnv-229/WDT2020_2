@@ -1,0 +1,68 @@
+﻿.header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .header .header__title {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .header .header__title:hover {
+            background-color: #e5e5e5;
+        }
+
+        .header .header__title .title-text {
+            font-weight: bold;
+            margin-left: 16px;
+        }
+
+        .header .header__title .title-icon {
+            margin-left: 16px;
+            height: 16px;
+            width: 16px;
+            background-image: url('/content/icon/btn-next-page.svg');
+            transform: rotate(90deg);
+            background-size: contain;
+            background-position: center;
+        }
+
+    .header .header__account {
+        display: flex;
+        position: absolute;
+        right: 0;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .header .header__account .account-avatar {
+            width: 30px;
+            height: 30px;
+            background-image: url('/content/icon/avatar-default.png');
+            background-size: contain;
+            background-position: center;
+        }
+
+        .header .header__account .account-text {
+            margin-left: 16px;
+            font-weight: bold;
+        }
+
+        .header .header__account .account-option {
+            margin-left: 16px;
+            margin-right: 16px;
+            width: 16px;
+            height: 16px;
+            border-radius: 45px;
+            background-image: url('/content/icon/option.png');
+            background-position: center;
+            background-size: contain;
+        }
