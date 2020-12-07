@@ -1,31 +1,75 @@
-﻿/*phần dùng chung cho cả trang web nhu font chu, kích thước chữ, layout dùng chung*/
-@import url('layout/constent.css');
-@import url('layout/header.css');
-@import url('layout/menu.css');
-.body {
-    font-family: GoogleSans-BlackItalic;
-    font-size: 13px;
+﻿@import url('common/content.css');
+@import url('common/header.css');
+@import url('common/menu.css');
+body {
+    margin: 0;
+    font-family: GoogleSans-Italic;
+    font-size: 10px;
+}
+@font-face {
+    font-family: 'GoogleSans-Black';
+    src: url('../../content/font/GoogleSans-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Italic';
+    src: url('../../content/font/GoogleSans-Italic.otf') format('opentype');
 }
 @font-face {
     font-family: 'GoogleSans-Bold';
     src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
 }
-@font-face {
-    font-family: 'GoogleSans-Regular';
-    src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
-}
-@font-face {
-    font-family: 'GoogleSans-BlackItalic';
-    src: url('../content/font/GoogleSans-BlackItalic.otf') format('opentype');
-}
-.panel-left{
-    width: 200px;
+
+.left-panel {
+    width: 150px;
     height: 100vh;
+    border-right: 2px solid #c3b4b4;
 }
-.panel-right{
+.right-panel {
     position: absolute;
-    left:200px;
-    top:0;
-    width:calc(100% - 200px);
+    top: 0px;
+    left: 150px;
+    width: calc(100% - 150px);
     height: 100vh;
 }
+.left-panel .logo {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+.logo .expend-icon {
+    margin-right:5px;
+    width: 20px;
+    height: 20px;
+    background-image:  url('../content/img/toggle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo-page {
+    width: 125px;
+    height: 20px;
+    background-image: url('../content/img/cukcuk-logo.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+tr{
+    height:25px;
+    text-align: left;
+}
+th,td{
+    border-bottom: solid #000000 1px;
+}
+table{
+    overflow: scroll;
+}
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #ebe9e9;
+}
+

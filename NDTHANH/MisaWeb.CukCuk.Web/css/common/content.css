@@ -1,0 +1,79 @@
+﻿.content{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+    display:flex;
+}
+
+.content .top_content{
+    width: 100%;    
+    height: 80px;
+}
+ .content .middle_content{
+     position:absolute;
+     top:80px;
+     width: 100%;
+     height: calc(100% - 120px);
+ }
+.content .top_content .string{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    margin-left:10px;
+    padding-top: 20px;
+}
+
+.content .top_content .adder-custommer{
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    right: 10px;
+    top:20px;
+    width: 120px;
+    height:25px;
+    background-color: #01b075;
+    border-radius: 3px;
+}
+
+.content .top_content .adder-custommer .icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    background-image: url('../../content/icon/add.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.content .top_content .adder-custommer .adder_string{
+    width:100px;
+    height: 11px;
+    margin-left:10px;
+    font-size:10px;
+}
+
+.content .top_content  .searching-item {
+    position: absolute;
+    top:50px;
+    left:10px;
+    width: 120;
+    height: 25px;
+    font-size: 10px;
+}
+.content .top_content .refresh-item {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    width: 15px;
+    height: 15px;
+    border: solid #000000 1px;
+    border-radius: 3px;
+    background-image: url('../../content/icon/refresh.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+.content .top_content .refresh-item:hover{
+    cursor: pointer;
+}
+.content .top_content .adder-custommer:hover{
+    cursor: pointer;
+}
