@@ -1,0 +1,17 @@
+﻿.infor__table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    height:100%;
+    
+}
+td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    cursor:pointer
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
