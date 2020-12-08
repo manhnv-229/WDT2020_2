@@ -1,0 +1,12 @@
+.left {
+    width: 20%;
+    height: 1000px;
+    background-color: red;
+}
+
+.right {
+    width: 50%;
+    /* position: fixed; */
+    height: 50px;
+    background-color: blue;
+}
