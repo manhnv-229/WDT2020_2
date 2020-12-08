@@ -1,0 +1,100 @@
+﻿@import url('layout/content.css');
+@import url('layout/header.css');
+@import url('layout/nvbar.css');
+@import url('component/dialog.css');
+body {
+	/*font-family: 'GoogleSans-Regular';*/
+	font-size: 13px;
+	margin: 0;
+}
+@font-face {
+	font-family: 'GoogleSans-Regular';
+	src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'GoogleSans-Bold';
+	src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
+}
+@font-face {
+	font-family: 'GoogleSans-Italic';
+	src: url('../content/font/GoogleSans-Italic.otf') format('opentype');
+}
+.panel-left {
+	width: 200px;
+	height: 100vh;
+	//background-color: aqua;
+	position:fixed;
+}
+.panel-right {
+	position: absolute;
+	top:0;
+	left:200px;
+	width: calc(100% - 200px);
+	height: 100vh;
+	//background-color: bisque;
+}
+.panel-left .logo {
+	padding-left: 20px;
+	align-items: center;
+	display: flex;
+	height:60px;
+	width: 200px;
+	//background-color: #00ff21;
+}
+.logo .expend-icon {
+	height: 30px;
+	width: 30px;
+	background-image: url('../content/img/toggle.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.logo .logo-page {
+	margin-left: 10px;
+	height: 34px;
+	width: 100%;
+	background-image: url('../content/img/cukcuk-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+.menu{
+	width:100%;
+}
+.menu .menu__item {
+	padding-left: 20px;
+	display: flex;
+	height: 40px;
+	cursor: pointer;
+	align-items: center;
+	
+}
+.menu .menu__item:hover{
+	background-color: #e5e5e5
+}
+.menu .menu__item .menu__item--icon {
+	
+	height: 24px;
+	width: 24px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.menu .menu__item .menu__item--text{
+	margin-left: 10px;
+}
+
+.icon-dashboard {
+	background-image: url('../content/icon/dashboard.png');
+}
+
+.icon-report {
+	background-image: url('../content/icon/report.png');
+}
+.icon-customer {
+	background-image: url('../content/icon/dic-employee.png');
+}
+.icon-setting {
+	background-image: url('../content/icon/setting.png');
+}
