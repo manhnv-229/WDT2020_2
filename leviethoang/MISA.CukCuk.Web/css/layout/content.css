@@ -1,0 +1,32 @@
+﻿
+.content {
+    width: 100%;
+    height: calc(100% - 60px);
+    font-size: 13px;
+    
+}
+.table{
+    
+    width:100%;
+    height:calc(100% - 80px);
+    border: 0;
+    cell
+}
+.table tr{
+    border-bottom: 1px;
+}
+table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: white;
+}
+table thead tr:nth-child(1) {
+    background-color: white;
+}
+table, th, td {
+    
+    border-collapse: collapse;
+    border-bottom: 1px solid #000000;
+}
