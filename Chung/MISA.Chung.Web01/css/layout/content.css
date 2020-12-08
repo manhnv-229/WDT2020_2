@@ -1,0 +1,168 @@
+﻿.panel-right .content {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+.content .top .tit{
+    font-size: xx-large;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #808080;
+    float: left;
+  }
+
+  .content .top .add .add-but{
+    height: 40px;
+    float: right;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #019160;
+  }
+  .content .top .add .add-but .add-but{
+    margin-top: 5px;
+  }
+.add-icon {
+    background-image: url('../../content/icon/dic-employee.png');
+}
+.panel-right {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+.panel-right .content{
+    background-color: white;
+}
+.panel-right .content .top-content .top{
+    /* float: left; */
+}
+
+.panel-right .content .search-item-icon{
+    width: 500px;   
+    height: 24px;
+    border: 2px solid #808080;
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.content .add-button {
+    background-color: #019160; /* Green */
+    border: none;
+    width: 160px;
+    height: 40px;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: right;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 1000px;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.content .button-refresh{
+    display: flex;
+    background-color: wheat; /* Green */
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    font-style: regular;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 1000px;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+}
+table{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    color: black;
+}
+tr {
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+td {
+    width: 10%;
+    background-size: 50vh;
+    border-bottom: 1px solid #ddd;
+    text-align:center;
+}
+  .panel-right .content .search-item-icon{
+    /* width: 500px;    */
+    /* height: 24px; */
+    border: 2px solid #808080;
+    border-radius: 4px;
+        /*background-image: url('../../content/icon/dashboard.png');*/
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {
+      background-color: #ddd;
+}
+
+.icon-search {
+    background-image: url('../../content/icon/search.png');
+}
+.add-button{
+    background-image: url('../../content/icon/dic-employee.png');
+}
+.button-refresh {
+    background-image: url('../../content/icon/refresh.png');
+}

@@ -1,0 +1,11 @@
+﻿body {
+    background: #343d46;
+}
+
+.panel-right .content .Textbox {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-image: url('../../content/icon/search.png');
+}

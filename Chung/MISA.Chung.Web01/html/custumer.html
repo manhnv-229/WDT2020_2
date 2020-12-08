@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Quản lý khách hàng - CUKCUK.VN</title>
+    <link href="/css/main.css" rel="stylesheet" />
+    <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          background-position: center;
+          bottom: 0;
+          width: 100%;
+          background-color:white;
+          color: white;
+          text-align: center;
+        }
+        .pagination {
+            left: 0%;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+        }
+
+.pagination a.active {
+  background-color: #019160;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="panel-left">
+            <div class="logo">
+                <div class="expend-icon"></div>
+                <div class="logo-page"></div>
+            </div>
+            <div class="menu">
+                <div class="menu_item">
+                    <div class="menu_item-icon icon-dashboard"></div>
+                    <div class="menu_item-text">Tổng quan</div>
+                </div>
+                <div class="menu_item">
+                    <div class="menu_item-icon icon-report"></div>
+                    <div class="menu_item-text"> Báo cáo</div>
+                </div>
+                <div class="menu_item">
+                    <div class="menu_item-icon icon-buy"></div>
+                    <div class="menu_item-text">Mua hàng</div>
+                </div>
+                <div class="menu_item">
+                    <div class="menu_item-icon icon-list"></div>
+                    <div class="menu_item-text">Danh mục khách hàng</div>
+                </div>
+                <div class="menu_item">
+                    <div class="menu_item-icon icon-setting"></div>
+                    <div class="menu_item-text">Thiết lập hệ thống</div>
+                </div>
+            </div>
+            <div class="logo"></div>
+        </div>  
+        <div class="panel-right">
+            <div class="header">
+                <div class="list">
+                    <button class="btn">Nhà hàng Biển Đông</button>
+                    <div class="dropdown">
+                        <button class="btn" style="border-left:1px solid navy">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                </div>
+                </div>
+                <div class="avatar">
+                        <div class="avatar-icon icon-avatar"></div>
+                        <div class="avatar-icon-text">Lê Nguyễn Thành Chung</div>
+                        <div class="more">
+                            <button class="but but-icon"></button>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="top">
+                    <div class="tit">Danh sách khách hàng</div>
+                    <div class="add">
+                        <button class="add-but add-icon"></button>
+                    </div>
+                </div> 
+                <div class="topnav">
+                    <input type="text" placeholder="Search..">
+                  </div>
+                <div class="refresh">
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-refresh"></span> Refresh
+                      </button>
+                </div>
+                </div>
+                <div class="search-item-icon">
+                    </div>
+                    <div class="table">
+                        <table border="0" width="100%" cellspacing="0">
+                            <tr>
+                                <th>Mã khách hàng</th>
+                                <th>Họ và tên</th>
+                                <th>Giới tính</th>
+                                <th>Ngày sinh</th>
+                                <th>Nhóm khách hàng</th>
+                                <th>Điện thoại</th>
+                                <th>Email</th>
+                                <th>Địac chỉ</th>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                            <tr>
+                                <td>KH0000001</td>
+                                <td>Lê Nguyễn Thành Chung</td>
+                                <td>Nam</td>
+                                <td>20/06/2000</td>
+                                <td>Cá nhân</td>
+                                <td>0123456789</td>
+                                <td>Chung.lnt183696@sis.hust.edu.vn</td>
+                                <td>Phú Xuyên</td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+            </div>
+            <div class="footer">
+                <div class="a">Hiển thị 1/10 khách</div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+                <div class="b"><a> 10 khách/page</a></div>
+            </div>
+            <div class="dialog">
+                <div class="model_opacity"></div>
+                <div class="dialog_content"></div>
+            </div>
+        </div>
+</body>
+</html>
