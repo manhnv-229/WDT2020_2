@@ -72,7 +72,7 @@
             <!--Top of Content-->
             <div class="top_of_content_1">
                 <p><b>Danh sách khách hàng</b></p>
-                <button class="btn btn_add_customer"><span class="icon_btn icon_add_customer"></span>Thêm khách hàng</button>
+                <button class="btn btn_add_customer" onclick="show()"><span class="icon_btn icon_add_customer"></span>Thêm khách hàng</button>
             </div>
             <div class="top_of_content_2">
                 <div class="input_icon">
@@ -88,16 +88,16 @@
             <div class="table_customer">
                 <table>
                     <thead>
-                    <th>Mã khách hàng</th>
-                    <th>Họ và tên</th>
-                    <th>Giới tính</th>
-                    <th>Ngày sinh</th>
-                    <th>Nhóm khách hàng</th>
-                    <th>Điện thoại</th>
-                    <th>Email</th>
-                    <th>Địa chỉ</th>
-                    <th>Số tiền nợ</th>
-                    <th>Mã thẻ thành viên</th>
+                        <th>Mã khách hàng</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                        <th>Nhóm khách hàng</th>
+                        <th>Điện thoại</th>
+                        <th>Email</th>
+                        <th>Địa chỉ</th>
+                        <th>Số tiền nợ</th>
+                        <th>Mã thẻ thành viên</th>
                     </thead>
                     <tbody>
                         <tr>
@@ -341,5 +341,78 @@
             </div>
         </div>
     </div>
+
+    <!--Dialog-->
+    <div class="dialog">
+        <div class="modal_opacity"></div>
+        <div class="dialog_content">
+            <div class="form_content_dialog">
+                <p>THÔNG TIN KHÁCH HÀNG</p>
+                <div class="avatar">
+                    <div class="icon_avatar"></div>
+                    <span>
+                        Vui lòng chọn ảnh có định dạng .jpg, .jpeg, .png, .gif
+                    </span>
+                </div>
+                <form>
+                    <div class="form_top">
+                        <div class="form_top_left">
+                            <label>Mã khách hàng (<span style="color: red">*</span>)</label><br />
+                            <input type="text" class="field_input_label" />
+                            <br />
+                            <label>Mã thẻ thành viên</label><br />
+                            <input type="text" class="field_input_label" />
+                            <br />
+                            <label>Ngày sinh</label><br />
+                            <input type="date" class="field_input_label" style="padding-right: 16px" />
+                        </div>
+                        <div class="form_top_right">
+                            <label>Họ và tên (<span style="color: red">*</span>)</label><br />
+                            <input type="text" class="field_input_label" />
+                            <br />
+                            <label>Nhóm khách hàng</label><br />
+                            <select class="field_input_label">
+                                <option>Khách Vip</option>
+                                <option>Khách thường</option>
+                                <option>Khách Pro</option>
+                            </select>
+                            <br />
+                            <label>Giới tính</label><br />
+                            <input type="radio" class="input_radio" id="male" name="gender" value="Nam" /><span class="checkmark"></span> <label>Nam</label>
+                            <input type="radio" class="input_radio" id="female" name="gender" value="Nữ" /> <label>Nữ</label>
+                        </div>
+                    </div>
+                    <div class="form_bottom">
+                        <div class="form_bottom_left">
+                            <label>Email</label><br />
+                            <input type="text" class="field_input_label" />
+                            <br />
+                            <label>Tên công ty</label><br />
+                            <input type="text" class="field_input_label" />
+                        </div>
+                        <div class="form_bottom_right">
+                            <label>Số điện thoại (<span style="color: red">*</span>)</label><br />
+                            <input type="text" class="field_input_label" />
+                            <br />
+                            <label>Mã số thuế</label><br />
+                            <input type="text" class="field_input_label" />
+                        </div>
+                    </div>
+                    <div class="form_footer">
+                        <label>Địa chỉ</label><br />
+                        <input type="text" class="field_input_label" />
+                    </div>
+                </form>
+
+            </div>
+            <div class="control_dialog">
+                <button class="btn btn_cancel" onclick="hiden()">Hủy</button>
+                <button class="btn btn_save"><span class="icon_btn"></span> Lưu</button>
+                <button class="btn btn_save-add" >Lưu và thêm mới</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/common/hiden.js"></script>
 </body>
 </html>

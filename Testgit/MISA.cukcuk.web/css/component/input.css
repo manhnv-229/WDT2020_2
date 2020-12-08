@@ -6,3 +6,10 @@
     box-sizing: border-box;
     font-size: 12px;
 }
+
+.field_input_label {
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 16px;
+}

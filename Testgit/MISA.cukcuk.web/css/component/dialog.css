@@ -1,0 +1,222 @@
+﻿.dialog {
+    display: none;
+}
+
+    .dialog .modal_opacity {
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.3;
+        /*display: none;*/
+    }
+
+    .dialog .dialog_content {
+        background-color: #ffffff;
+        width: 700px;
+        height: 500px;
+        position: fixed;
+        top: calc(50vh - 250px);
+        left: calc(50% - 350px);
+        border-radius: 4px;
+        padding: 0;
+    }
+
+        .dialog .dialog_content p {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-left: 16px;
+            margin-bottom: 10px;
+        }
+
+        .dialog .dialog_content .form_content_dialog {
+            background-color: #ffffff;
+            width: 100%;
+            height: calc(100% - 50px);
+            border-radius: 4px 4px 0 0;
+            /*background-color: #98830f;*/
+        }
+
+        .dialog .dialog_content .control_dialog {
+            background-color: #e3e3e3;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            border-radius: 0 0 4px 4px;
+            display: flex;
+            /*background-color: #c67070;*/
+        }
+
+        .dialog .dialog_content .form_content_dialog .avatar {
+            width: 200px;
+            height: 200px;
+            /*background-color: red;*/
+            float: left;
+        }
+
+            .dialog .dialog_content .form_content_dialog .avatar .icon_avatar {
+                background-image: url(../../content/img/default-avatar.jpg);
+                width: 150px;
+                height: 150px;
+                background-size: contain;
+                border: 1px solid #d1d1d1;
+                border-radius: 50%;
+                margin: auto;
+            }
+
+            .dialog .dialog_content .form_content_dialog .avatar > span {
+                display: inline-block;
+                width: 200px;
+                text-align: center;
+                font-size: 11px;
+                margin-top: 5px;
+            }
+
+        .dialog .dialog_content .form_content_dialog form {
+            width: 100%;
+            height: calc(100% - 35px);
+        }
+
+            .dialog .dialog_content .form_content_dialog form .form_top {
+                height: 200px;
+                /*width: 500px;*/
+                position: absolute;
+                top: 35px;
+                left: 200px;
+                right: 0;
+                /*background-color: #00ff21;*/
+                padding-left: 16px;
+            }
+
+                .dialog .dialog_content .form_content_dialog form .form_top .form_top_left {
+                    width: 240px;
+                    height: 195px;
+                    display: inline-block;
+                    /*background-color: #3f3565;*/
+                    position: absolute;
+                    left: 16px;
+                    top: 0px;
+                }
+
+                .dialog .dialog_content .form_content_dialog form .form_top .form_top_right {
+                    width: 240px;
+                    height: 195px;
+                    display: inline-block;
+                    /*background-color: #3c5a46;*/
+                    position: absolute;
+                    left: 258px;
+                    top: 0px;
+                }
+
+                .dialog .dialog_content .form_content_dialog form .form_top .field_input_label {
+                    width: 230px;
+                    margin-bottom: 5px;
+                    margin-top: 3px;
+                    color: #525252;
+                }
+
+                .dialog .dialog_content .form_content_dialog form .form_top .input_radio {
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 10px;
+                    vertical-align: middle;
+                }
+
+.input_radio ~ label {
+    vertical-align: middle;
+}
+
+/*.dialog .dialog_content .form_content_dialog form .form_top .input_radio:checked:after {
+                    color: #00ff21;
+                }*/
+
+
+.dialog .dialog_content .form_content_dialog form .form_bottom {
+    /*background-color: #37ae95;*/
+    position: absolute;
+    top: 235px;
+    left: 0px;
+    bottom: 135px;
+    right: 0px;
+    padding-left: 16px;
+}
+
+    .dialog .dialog_content .form_content_dialog form .form_bottom .form_bottom_left {
+        display: inline-block;
+        width: 440px;
+    }
+
+        .dialog .dialog_content .form_content_dialog form .form_bottom .form_bottom_left .field_input_label {
+            width: 430px;
+            margin-bottom: 5px;
+            margin-top: 3px;
+            color: #525252;
+        }
+
+    .dialog .dialog_content .form_content_dialog form .form_bottom .form_bottom_right {
+        display: inline-block;
+        width: 200px;
+    }
+
+        .dialog .dialog_content .form_content_dialog form .form_bottom .form_bottom_right .field_input_label {
+            width: 230px;
+            margin-bottom: 5px;
+            margin-top: 3px;
+            color: #525252;
+        }
+
+.dialog .dialog_content .form_content_dialog form .form_footer {
+    position: absolute;
+    top: 365px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding-left: 16px;
+    /*background-color: #2f58a3;*/
+}
+
+    .dialog .dialog_content .form_content_dialog form .form_footer .field_input_label {
+        margin-bottom: 5px;
+        margin-top: 3px;
+        width: 673px;
+    }
+
+.dialog .dialog_content .control_dialog {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+
+    .dialog .dialog_content .control_dialog .btn {
+        margin-left: 16px;
+    }
+
+    .dialog .dialog_content .control_dialog .btn_cancel {
+        background-color: #e3e3e3;
+        color: #000000;
+        width: 100px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .dialog .dialog_content .control_dialog .btn_save {
+        width: 100px;
+    }
+
+    .dialog .dialog_content .control_dialog .btn_cancel:hover {
+        background-color: #ffffff;
+    }
+
+.dialog .control_dialog .btn_save .icon_btn {
+    background-image: url(../../content/icon/icon-save.png);
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
