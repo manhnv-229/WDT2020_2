@@ -1,0 +1,38 @@
+﻿/*table*/
+.table {
+    margin-top: 20px;
+    overflow: scroll;
+    border-bottom: 2px solid #cccccc;
+}
+
+
+table th, td {
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 10px 16px;
+    text-align: left;
+    border-bottom: 1px solid #bbbbbb;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+table tr:hover {
+    background-color: #ededed;
+}
+
+table th {
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+}
+
+table td span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        MISA
+    </title>
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/component/button.css" rel="stylesheet" />
+    <link href="/css/component/toolbar.css" rel="stylesheet" />
+    <link href="/css/component/table.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <div class="icon-bar"></div>
+            <div class="logo-page"></div>
+        </div>
+        <div class="menu__content">
+            <div class="menu__item">
+                <div class="menu__icon icon__dashboard"></div>
+                <div class="menu__text">Tổng quan</div>
+            </div>
+            <div class="menu__item">
+                <div class="menu__icon icon__report"></div>
+                <div class="menu__text">Báo cáo</div>
+            </div>
+            <div class="menu__item">
+                <div class="menu__icon icon__dashboard"></div>
+                <div class="menu__text">Mua hàng</div>
+            </div>
+            <div class="menu__item">
+                <div class="menu__icon icon__customer"></div>
+                <div class="menu__text">Danh mục khách hàng</div>
+            </div>
+
+            <div class="menu__item">
+                <div class="menu__icon icon__setting"></div>
+                <div class="menu__text">Thiết lập hệ thống</div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header__name">
+            <select class="name__box">
+                <option value="1">Nhà hàng Biển Đông</option>
+            </select>
+        </div>
+        <div class="header__user">
+            <div class="header__avatar"></div>
+            <div class="header__username">Trần Thị Hồng Nhung</div>
+            <div class="header_icon icon__option"></div>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="content__title">
+            <div class="content__title__text">Danh sách khách hàng</div>
+            <div class="content__title__button">
+                <button class="button">
+                    <div class="icon__add"></div>
+                    <div class="button__text">Thêm khách hàng</div>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="content__search">
+            <div class="content__search__box">
+                <div class="icon__search"></div>
+                <input type="search" placeholder="Tìm kiếm theo mã, Tên khác" />
+            </div>
+            <div class="icon__refresh"></div>
+        </div>
+
+        <div class="table">
+
+            <table border="0" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Mã Khách hàng</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                        <th>Nhóm Khách hàng</th>
+                        <th>Dien thoai</th>
+                        <th>Email</th>
+                        <th>Địa chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KH3965</td>
+                        <td>Trần Thị Hồng Nhung</td>
+                        <td>Nữ</td>
+                        <td>11/01/2000</td>
+                        <td>Khách hàng tiềm năng</td>
+                        <td>01232589563</td>
+                        <td>nhungttth3965@gmail.com</td>
+                        <td>Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>KH3965</td>
+                        <td>Trần Thị Hồng Nhung</td>
+                        <td>Nữ</td>
+                        <td>11/01/2000</td>
+                        <td>Khách hàng tiềm năng</td>
+                        <td>01232589563</td>
+                        <td>nhungttth3965@gmail.com</td>
+                        <td>Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>KH3965</td>
+                        <td>Trần Thị Hồng Nhung</td>
+                        <td>Nữ</td>
+                        <td>11/01/2000</td>
+                        <td>Khách hàng tiềm năng</td>
+                        <td>01232589563</td>
+                        <td>nhungttth3965@gmail.com</td>
+                        <td>Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>KH3965</td>
+                        <td>Trần Thị Hồng Nhung</td>
+                        <td>Nữ</td>
+                        <td>11/01/2000</td>
+                        <td>Khách hàng tiềm năng</td>
+                        <td>01232589563</td>
+                        <td>nhungttth3965@gmail.com</td>
+                        <td>Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="toolbar">
+            <div class="text__left">Hiển thị 1-100000 Khách hàng</div>
+            <div class="button">
+                <button class="icon__prev" id="1"><<</button>
+                <button class="icon__prev" id="2"><</button>
+                <button class="icon__round">1</button>
+                <button class="icon__round">2</button>
+                <button class="icon__round">3</button>
+                <button class="icon__next" id="2">></button>
+                <button class="icon__next" id="1">>></button>
+
+            </div>
+            <div class="text__right">10 Khách hàng/Trang</div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.header {
+    width: calc(100% - 230px);
+    height: 60px;
+    position: absolute; /*float:left*/
+    top: 0;
+    left: 200px;
+    display: flex;
+    border-bottom: 2px solid #cccccc;
+    padding-left: 15px;
+    font-family: 'GoogleSans-Bold';
+}
+    /*header name*/
+    .header .header__name {
+        width: 270px;
+        height: 60px;
+    }
+
+        .header .header__name .name__box {
+            height: 60px;
+            border: none;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: 'GoogleSans-Bold';
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+    /*header user*/
+    .header .header__user {
+        width: calc(100% - 200px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        
+    }
+
+        .header .header__user div:hover {
+            background-color: #ededed;
+        }
+
+
+        .header .header__user .header__avatar {
+            width: 30px;
+            height: 30px;
+            background-image: url('/content/icon/avatar-default.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 10px;
+        }
+
+        .header .header__user .header__username {
+            width: 150px;
+        }
+
+.icon__option {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../content/icon/option.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
