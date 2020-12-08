@@ -8,6 +8,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #000000;
+    opacity: 0.2;
+}
+
+.dialog .dialog_content{
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
 }

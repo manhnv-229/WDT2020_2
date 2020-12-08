@@ -5,6 +5,57 @@
     <title>Quản lý khách hàng - CUKCUK.VN</title>
     <link href="/css/main.css" rel="stylesheet" />
     <style>
+        /* Bordered form */
+        form {
+            border: 3px solid white;
+        }
+
+        /* Full-width inputs */
+        input[type=text]{
+            width: 35%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            /* display: inline-block; */
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            /* Add a hover effect for buttons */
+            button:hover {
+                opacity: 0.8;
+            }
+
+        /* Center the avatar image inside this container */
+        .imgcontainer {
+            text-align: left;
+            margin: 12px 0 12px 0;
+        }
+
+        /* Avatar image */
+        img.avatar {
+            width: 30%;
+            border-radius: 30%;
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+        }
+
+        /* The "Forgot password" text */
+
+        /* Change styles for span and cancel button on extra small screens */
         .footer {
           position: fixed;
           left: 0;
@@ -286,7 +337,47 @@
             </div>
             <div class="dialog">
                 <div class="model_opacity"></div>
-                <div class="dialog_content"></div>
+                <div class="dialog_content">
+                    <form action="action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <img src="../content/img/default-avatar.jpg" alt="Avatar" class="avatar"/>
+                        </div>
+                      
+                        <div class="container">
+                          <label for="code"><b>Nhập mã khách hàng</b></label>
+                          <input type="text" placeholder="Mã khách hàng" name="code" required>
+                          <label for="name"><b>Họ và tên</b></label>
+                          <input type="text" placeholder="Họ và tên" name="name" required>
+                          <label for="card"><b>Mã thẻ thành viên</b></label>
+                          <input type="text" placeholder="Mã thẻ" name="card" required>
+                          <label for="date"><b>Ngày sinh</b></label>
+                          <input type="date" placeholder="" name="date" required>
+                          <label for="gender"><b>Giới tính</b></label>
+                          <label class="container">Nam
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container">Nữ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container">Khác
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label for="mail"><b>Email</b></label>
+                          <input type="text" placeholder="Nhập mail" name="mail" required>
+                          <label for="sdt"><b>Số điện thoại</b></label>
+                          <input type="text" placeholder="Nhập số điện thoại" name="sdt" required>
+                          <label for="cty"><b>Tên công ty</b></label>
+                          <input type="text" placeholder="Nhập tên công ty" name="cty" required>
+                          <label for="thue"><b>Nhập mã số thuế</b></label>
+                          <input type="text" placeholder="Mã số thuế công ty" name="thue" required>
+                          <label for="addr"><b>Địa chỉ</b></label>
+                          <input type="text" placeholder="" name="addr" required>
+                        </div>
+                      </form>
+                </div>
             </div>
         </div>
 </body>
