@@ -1,0 +1,8 @@
+﻿.input__default {
+    border: 1px solid #bababa;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px 16px;
+    box-sizing:border-box;
+    width:230px;
+}

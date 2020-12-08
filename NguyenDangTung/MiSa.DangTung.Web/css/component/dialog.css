@@ -1,0 +1,134 @@
+﻿.dialog{
+
+
+}
+    .dialog .modal__opacity{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:black;
+        opacity:.2;
+    }
+
+    .dialog .dialog__content
+    {
+        width:750px;
+        background-color:white;
+        border-radius:5px;
+        position:fixed;
+        top:calc(50% - 300px );
+        left:calc(50% - 350px);
+    }
+.dialog__title{
+    width:100%;
+    padding-top:24px;
+    padding-left:24px;
+    display:flex;
+    justify-content:space-between;
+    box-sizing:border-box;
+}
+.close {
+    width: 30px;
+    height: 30px;
+    border:none;
+    outline:none;
+    background-image: url('../../content/icon/icon-close-button-png-image_1357822.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.infor__emp {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+    .infor__emp .emp__img{
+        width:200px;
+        text-align:center;
+    }
+        .infor__emp .emp__img img{
+            width:180px;
+            height:180px;
+            border-radius:90px;
+            border:1px solid #bbbbbb;
+            cursor:pointer;
+        }
+        .infor__emp .emp__info1 {
+            width: 230px;
+        }
+    .infor__emp .emp__info2 {
+        width: 230px;
+    }
+.Seperate{
+    margin-top:25px;
+}
+.emp__info2 div:nth-child(4)
+{
+    padding-top:5px;
+}
+.info__type__emp {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #bababa;
+    border-radius: 7px;
+}
+.infor__emp .info__email__emp {
+    width: 455px;
+}
+.infor__emp .info__company__emp {
+    width: 455px;
+}
+
+.infor__emp .info__address__emp{
+    width:100%;
+}
+.infor__addr {
+    padding: 24px 24px 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .infor__addr .info__address__emp{
+        width:100%;
+    }
+
+.dialog__content div:nth-child(3):nth-child(4):nth-child(5){
+    padding-top:24px;
+}
+
+.confirm__info {
+    margin-top:24px;
+    height: 60px;
+    background-color: #e9ebee;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+    .confirm__info button{
+        margin-right:24px;
+    }
+    .icon-save {
+        background-image: url('../../content/icon/add.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+    }
+.btn_cancel {
+    background-color: #e9ebee;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
