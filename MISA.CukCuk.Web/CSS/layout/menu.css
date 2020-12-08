@@ -1,0 +1,82 @@
+.menu {
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid #E5E5E5;
+}
+.menu .logo {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+    .menu .logo .icon-bar {
+        width: 24px;
+        height: 24px;
+        background-image: url('../../content/img/toggle.png');
+        background-size: cover;
+        margin-left: 16px;
+    }
+
+    .menu .logo .logo-page {
+        width: 160px;
+        height: 24px;
+        background-image: url('../../content/img/cukcuk-logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+    }
+.menu .menu__content{
+    position: relative;
+    width: 100%;
+}
+
+    .menu .menu__content .menu__item {
+        display: flex;
+        width: 100%;
+        height: 44px;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    .menu .menu__content .menu__icon {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 12px 10px 12px 16px;
+    }
+    .menu .menu__content .menu__text {
+        margin: 12px 0px 12px 0px;
+    }
+.menu .menu__content .menu__item:hover{
+    background-color: #ff0000;
+}
+    .menu .menu__content .menu__item:active
+    {
+        background-color: #ffd800;
+    }
+
+
+    #document-online {
+        background-image: url('../../content/icon/document-online.png');
+    }
+#document-offline {
+    background-image: url('../../content/icon/document-online.png');
+}
+#report {
+    background-image: url('../../content/icon/report.png');
+}
+#setting {
+    background-image: url('../../content/icon/setting.png');
+}
+#dashboard {
+    background-image: url('../../content/icon/dashboard.png');
+}
+#dic-employee {
+    background-image: url('../../content/icon/dic-employee.png');
+}

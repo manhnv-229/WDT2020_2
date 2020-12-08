@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right:0;    
+    width: calc(100% - 200px);
+    height: 60px;
+    border-bottom: 1px solid #E5E5E5;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.header .company{
+    margin-left: 10px;
+}
+    .header .account-info {
+        display: flex;
+        position: relative;
+        left:978px;
+        align-items: center;
+        cursor: pointer;
+    }
+        .header .account-info .account-avt {
+            width: 34px;
+            height: 34px;
+            margin-right: 16px;
+            background-size: cover;
+            background-image: url('../../content/icon/avatar-default.png');
+        }
+        .header .account-info .account-name {
+            height: 15px;
+            margin-right: 16px;
+        }
+        .header .account-info .account-option {
+            width: 15px;
+            height: 15px;
+            margin-right: 16px;
+            background-size: cover;
+            background-image: url('../../content/icon/option.png');
+        }
