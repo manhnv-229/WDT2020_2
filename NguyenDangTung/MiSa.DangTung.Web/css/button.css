@@ -1,0 +1,40 @@
+﻿.m-btn-default {
+    height: 40px;
+    background-color: #019160;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 0 16px;
+    font-family: GoogleSans-Regular;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+    .m-btn-default:hover {
+        background-color: #2FBE8E;
+    }
+    .btn-text {
+        margin-left: 8px;
+    }
+ .m-second-button{
+     background-color:#ffffff;
+     border-radius:4px;
+     height:40px;
+     color:#ffffff;
+     padding:0 24px;
+     text-align:center;
+     border:1px solid #bbbbbb;
+     outline:none;
+ }
+    .m-second-button:hover{
+        background-color:#e9ebee;
+    }
+    .m-bth-refrech {
+        background-position: center;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-image: url('../content/icon/refresh.png');
+        width: 40px;
+    }
