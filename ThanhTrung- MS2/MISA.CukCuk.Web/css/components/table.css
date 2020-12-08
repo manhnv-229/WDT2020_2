@@ -1,1 +1,12 @@
-﻿
+﻿table th, td {
+    border-bottom: 1px solid #bbbbbb;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 10px 16px;
+    text-align: center;
+    overflow: hidden;
+
+}
+    .info-customer:hover {
+        background-color: #e5e5e5e5;
+    }

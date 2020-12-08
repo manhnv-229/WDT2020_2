@@ -1,1 +1,11 @@
-﻿
+﻿input{
+    padding: 10px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
+
+.input-search {
+    padding-left: 40px;
+
+}

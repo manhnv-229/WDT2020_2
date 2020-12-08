@@ -1,0 +1,28 @@
+﻿.icon-search {
+    background-image: url('/content/icon/search.png');
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.icon-add {
+    width: 16px;
+    height: 16px;
+    background-image: url('/content/icon/add.png');
+    background-size: contain;
+}
+
+.icon_dashboard {
+    background-image: url('/content/icon/dashboard.png');
+}
+
+.icon_report {
+    background-image: url('/content/icon/report.png');
+}
+
+.icon_dic-employee {
+    background-image: url('/content/icon/dic-employee.png');
+}
+
+.icon_setting {
+    background-image: url('/content/icon/setting.png');
+}
