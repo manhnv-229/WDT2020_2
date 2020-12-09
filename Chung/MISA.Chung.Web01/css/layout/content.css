@@ -32,7 +32,7 @@
     background-color: white;
 }
 .panel-right .content .top-content .top{
-    /* float: left; */
+
 }
 
 .panel-right .content .search-item-icon{
@@ -53,28 +53,23 @@
     font-size: 17px;
   }
   
-  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
-  
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
 .content .add-button {
-    background-color: #019160; /* Green */
+    background-color: #019160; 
     border: none;
     width: 160px;
     height: 40px;
@@ -93,7 +88,7 @@
 
 .content .button-refresh{
     display: flex;
-    background-color: wheat; /* Green */
+    background-color: wheat; 
     border: none;
     width: 40px;
     height: 40px;
@@ -101,7 +96,7 @@
     padding-left: 16px;
     padding-right: 16px;
     text-align: left;
-    font-style: regular;
+    /*font-style: regular;*/
     text-decoration: none;
     display: inline-block;
     font-size: 13px;
@@ -145,14 +140,12 @@ td {
     text-decoration: none;
     transition: background-color .3s;
   }
-  
-  /* Style the active/current link */
+
   .pagination a.active {
     background-color: dodgerblue;
     color: white;
   }
-  
-  /* Add a grey background color on mouse-over */
+
   .pagination a:hover:not(.active) {
       background-color: #ddd;
 }
