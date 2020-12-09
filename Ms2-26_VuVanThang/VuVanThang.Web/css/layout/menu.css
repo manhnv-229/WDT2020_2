@@ -1,0 +1,24 @@
+﻿.menu {
+    width: 100%;
+}
+
+    .menu .menu__item {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        height: 40px;
+        cursor:pointer;
+    }
+        .menu .menu__item:hover {
+            background-color: #e5e5e5;
+        }
+        .menu .menu__item .menu__item--icon {
+            width: 24px;
+            height: 24px;
+            background-image: url('../../content/icon/dashboard.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .menu .menu__item .menu__item--text {
+            margin-left: 10px;
+        }
