@@ -7,18 +7,22 @@
     align-items: center;
     border-bottom: 1px solid #bcbcbc;
 }
+
     .header .company {
-        margin-left:35px;
+        margin-left: 35px;
         font-weight: bold;
         border: none;
-        cursor:pointer;
+        cursor: pointer;
+        outline: none;
+        width:165px;
     }
 
-.user{
-    align-items:center;
-    margin-right:15px;
-    display:flex;
+.user {
+    align-items: center;
+    margin-right: 15px;
+    display: flex;
 }
+
     .user .user__icon {
         width: 30px;
         height: 30px;
@@ -32,6 +36,7 @@
     .user .user__name {
         margin-left: 10px;
     }
+
     .user .user__option {
         width: 20px;
         height: 20px;

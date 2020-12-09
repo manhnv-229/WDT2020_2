@@ -1,8 +1,8 @@
 ﻿.grid {
     height: calc(100vh - 228px );
     width: 1300px;
-    overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -28,9 +28,11 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
-table{
-    width:1500px;
+
+table {
+    width: 1500px;
 }
+
     table th, td {
         border-bottom: 1px solid #bbbbbb;
         padding: 10px 16px;
@@ -38,5 +40,5 @@ table{
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width:150px;
+        max-width: 150px;
     }
