@@ -1,0 +1,100 @@
+﻿    .dialog__add {
+        width: 800px;
+        height: 600px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+        .dialog__add .dialog__add__header {
+            width: 100%;
+            height: 50px;
+        }
+
+            .dialog__add .dialog__add__header .title {
+                width: auto;
+                float: left;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 50px;
+                padding-left: 12px;
+            }
+
+            .dialog__add .dialog__add__header .icon {
+                float: right;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                border-radius: 50%;
+                margin-top: 10px;
+                margin-right: 12px;
+            }
+
+        .dialog__add .dialog__add__content {
+            width: 100%;
+            height: calc(100% - 50px - 50px);
+            overflow: hidden;
+        }
+
+            .dialog__add .dialog__add__content table {
+                width: 100%;
+                height: 100%;
+                text-align: left;
+            }
+
+                .dialog__add .dialog__add__content table td {
+                    max-width: calc((800px - 90px) / 3);
+                }
+
+                .dialog__add .dialog__add__content table label {
+                    display: flex;
+                    text-align: center;
+                }
+
+                .dialog__add .dialog__add__content table .image {
+                    background: url('../../content/img/default-avatar.jpg') no-repeat center;
+                    background-size: contain;
+                    width: 200px;
+                    height: 200px;
+                    border: 1px solid #bbbbbb;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+
+        .dialog__add .dialog__add__footer {
+            width: 100%;
+            height: 50px;
+            background-color: #E5E5E5;
+            justify-content: center;
+        }
+
+            .dialog__add .dialog__add__footer .button--add {
+                float: right;
+                margin: 5px 10px 0 10px;
+            }
+
+            .dialog__add .dialog__add__footer .button--save {
+                float: right;
+                margin-top: 5px;
+            }
+
+            .dialog__add .dialog__add__footer .button--cancel {
+                float: right;
+                margin-top: 5px;
+            }
+
+.icon--save {
+    background: url('../../content/icon/add.png') no-repeat center;
+    background-size: contain;
+}
+
+.icon-x {
+    background: url('../../content/icon/x.svg') no-repeat center;
+    background-size: contain;
+}
+
+
+.focus {
+    background-color: #019160;
+    color: #ffffff;
+}
