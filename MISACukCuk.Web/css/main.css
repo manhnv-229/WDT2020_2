@@ -67,15 +67,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.overlay{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-    z-index:1;
-    opacity: 0.4;
-}
-
 .prompt{
     position: fixed;
     left: 30vw;

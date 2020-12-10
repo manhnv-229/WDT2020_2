@@ -6,6 +6,8 @@ $(document).ready(function() {
     //     width: 350,
     //     modal: true});
     //thuc hien load du lieu
+
+ 
     //1. Lay du lieu
     loadData()
    
@@ -25,8 +27,12 @@ $(document).ready(function() {
 })
 
 $('#btnAdd').click(btnAddOnClick)
-$('#btnClose').click(btnCloseOnClick)
+$('.overlay').click(btnCloseOnClick)
 
+var dialog = $( ".prompt" ).dialog({
+    autoOpen: false,
+    modal: true,
+  });
 
 /**
  * Load du lieu
@@ -35,7 +41,13 @@ $('#btnClose').click(btnCloseOnClick)
 
 function btnAddOnClick(){
     //$('.prompt').show()
-    //dialog.dialog( "open" );
+    dialog.dialog( "open" );
+    // $('.overlay').show()
+}
+
+function btnCloseOnClick() {
+    // $('.overlay').hide()
+    alert('ui-icon-closethick')
 }
 
 function loadData() {
@@ -71,7 +83,7 @@ function loadData() {
                             <td>${phoneNumber}</td> 
                             <td>${email}</td> 
                             <td>${address}</td> 
-                            <td>1.000.000</td> 
+                            <td></td> 
                             <td>${memberCardCode}</td> 
                         </tr>`
             $('.grid tr:last').after(trHTML);
