@@ -1,0 +1,238 @@
+﻿.content {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    width: calc(100% - 200px - 20px);
+    height: calc(100vh - 60px - 20px);
+    background-color: #ffffff;
+    margin: 10px;
+    overflow: hidden;
+}
+
+    .content .title {
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+        .content .title .title__text {
+            float: left;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: #ffffff;
+            height: 100%;
+            line-height: 50px;
+        }
+
+        .content .title .title__button {
+            float: right;
+            display: flex;
+            right: 0;
+            background-color: #ffffff;
+            height: 50px;
+            overflow: hidden;
+        }
+
+    .content .option {
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+        .content .option .option__input {
+            float: left;
+            display: flex;
+            background-color: #ffffff;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+            .content .option .option__button {
+                float: right;
+                display: flex;
+                background-color: #ffffff;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+            }
+
+            .content .option .option__button .btn {
+                width: 25px;
+                height: 25px;
+                border: 1px solid #bbbbbb;
+                margin-left: 10px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+    .content .table {
+        width: 100%;
+        height: calc(100% - 50px - 50px - 50px);
+        overflow: auto;
+    }
+
+        .content .table::-webkit-scrollbar {
+            width: 6px;
+            height: 8px;
+            background-color: #E9EBEE;
+            cursor: pointer;
+        }
+
+        .content .table::-webkit-scrollbar-thumb {
+            width: 6px;
+            height: 8px;
+            background-color: #bbbbbb;
+            cursor: pointer;
+        }
+
+        .content .table table {
+            width: 2000px;
+            min-width: 100%;
+            border-collapse: collapse;
+        }
+
+            .content .table table thead{
+                top: 0;
+                width: 100%;
+                height: 45px;
+            }
+
+            .content .table table tbody {
+                height: calc(250px - 50px);
+                overflow-y: auto;
+            }
+
+            .content .table table tr {
+                height: 45px;
+                max-height: 45px;
+                border-bottom: 1px solid #bbbbbb;
+                cursor: pointer;
+                text-align: left;
+            }
+
+                .content .table table tbody tr:hover {
+                    background-color: #E5E5E5;
+                }
+
+                .content .table table tr th {
+                    padding: 5px 10px 5px 10px;
+                    background-color: #bbbbbb;
+                }
+
+                .content .table table tr td {
+                    padding: 5px 10px 5px 10px;
+                }
+
+    .content .footer {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+        .content .footer .footer__left{
+            float: left;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        .content .footer .footer__center__container {
+            display: inline-block;
+            height: 100%;
+        }
+
+        .content .footer .footer__center {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+            .content .footer .footer__center .btn:hover {
+                background-color: #2FBE8E;
+                color: #ffffff;
+            }
+
+            .content .footer .footer__center .privious {
+                width: 25px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid #bbbbbb;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .content .footer .footer__center .number-page {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 1px solid #bbbbbb;
+                cursor: pointer;
+            }
+
+            .content .footer .footer__center .next {
+                width: 25px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid #bbbbbb;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+        .content .footer .footer__right {
+            float: right;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+.icon--add-employee {
+    background: url('../../content/icon/add.png') no-repeat center;
+    background-size: contain;
+}
+
+.icon-refresh {
+    background: url('../../content/icon/refresh.png') no-repeat center;
+    background-size: contain;
+}
+
+.icon-privious {
+    background: url('../../content/icon/btn-prev-page.svg') no-repeat center;
+    background-size: contain;
+}
+
+.icon-next {
+    background: url('../../content/icon/btn-next-page.svg') no-repeat center;
+    background-size: contain;
+}
+
+.icon--search {
+    background: url('../../content/icon/search.png') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 0;
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #bbbbbb;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page {
+    padding: 0;
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+}
