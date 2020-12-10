@@ -2,11 +2,36 @@
 @import url('../layout/header.css');
 @import url('../layout/menu.css');
 body {
-    font-family: 'GoogleSans-Black';
+    margin:0px;
+    font-family: 'GoogleSans-Regular';
     font-size: 13px;
     font-style: normal;
 }
 @font-face {
     font-family: 'GoogleSans-Black';
     src: url('../confront/font/GoogleSans-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../confront/font/GoogleSans-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('../confront/font/GoogleSans-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Italic';
+    src: url('../confront/font/GoogleSans-Italic.otf') format('opentype');
+}
+.panel-left {
+    float:left;
+    width: 200px;
+    height: 100vh;
+    background-color:aqua;
+}
+
+.panel-right {
+    width : calc(100% - 200px);
+    height: 100vh;
+    background-color:antiquewhite;
 }
