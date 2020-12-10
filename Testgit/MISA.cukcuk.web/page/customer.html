@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <title>CukCuk Customer</title>
+    <link href="../lib/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
     <link href="/css/main.css" rel="stylesheet" />
+
 </head>
 <body>
     <div class="panel-left">
@@ -86,18 +88,18 @@
 
             <!--Table-->
             <div class="table_customer">
-                <table>
+                <table id="table_customer">
                     <thead>
-                        <th>Mã khách hàng</th>
-                        <th>Họ và tên</th>
-                        <th>Giới tính</th>
-                        <th>Ngày sinh</th>
-                        <th>Nhóm khách hàng</th>
-                        <th>Điện thoại</th>
-                        <th>Email</th>
-                        <th>Địa chỉ</th>
-                        <th>Số tiền nợ</th>
-                        <th>Mã thẻ thành viên</th>
+                        <th style="width: 7%">Mã khách hàng</th>
+                        <th style="width: 13%">Họ và tên</th>
+                        <th style="width: 5%">Giới tính</th>
+                        <th style="width: 8%">Ngày sinh</th>
+                        <th style="width: 9%">Nhóm khách hàng</th>
+                        <th style="width: 9%">Điện thoại</th>
+                        <th style="width: 6%">Email</th>
+                        <th style="width: 15%">Địa chỉ</th>
+                        <th style="width: 7%">Số tiền nợ</th>
+                        <th style="width: 7%">Mã thẻ thành viên</th>
                     </thead>
                     <tbody>
                         <tr>
@@ -348,12 +350,14 @@
         <div class="dialog_content">
             <div class="form_content_dialog">
                 <p>THÔNG TIN KHÁCH HÀNG</p>
+                <!--Avatar-->
                 <div class="avatar">
                     <div class="icon_avatar"></div>
                     <span>
                         Vui lòng chọn ảnh có định dạng .jpg, .jpeg, .png, .gif
                     </span>
                 </div>
+                <!--Form Input-->
                 <form>
                     <div class="form_top">
                         <div class="form_top_left">
@@ -378,7 +382,7 @@
                             </select>
                             <br />
                             <label>Giới tính</label><br />
-                            <input type="radio" class="input_radio" id="male" name="gender" value="Nam" /><span class="checkmark"></span> <label>Nam</label>
+                            <input type="radio" class="input_radio" id="male" name="gender" value="Nam" /> <label>Nam</label>
                             <input type="radio" class="input_radio" id="female" name="gender" value="Nữ" /> <label>Nữ</label>
                         </div>
                     </div>
@@ -408,11 +412,14 @@
             <div class="control_dialog">
                 <button class="btn btn_cancel" onclick="hiden()">Hủy</button>
                 <button class="btn btn_save"><span class="icon_btn"></span> Lưu</button>
-                <button class="btn btn_save-add" >Lưu và thêm mới</button>
+                <button class="btn btn_save-add">Lưu và thêm mới</button>
             </div>
         </div>
     </div>
 
-    <script src="../js/common/hiden.js"></script>
+    <script src="../lib/jquery-3.5.1.min.js"></script>                      <!--nhúng thư viện trước -> các hàm dùng chung -> các hàng dùng riêng-->
+    <script src="../lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <!--<script src="../js/common/hiden.js"></script>-->
+    <script src="../js/page/customer.js"></script>
 </body>
 </html>
