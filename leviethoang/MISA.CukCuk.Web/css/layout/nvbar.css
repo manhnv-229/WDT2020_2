@@ -16,8 +16,7 @@
 }
 #dskh {
     height: 34px;
-    width: 195px;
-    padding-top: 0;
+    width: 220px ;
     font-size: 22px;
     margin-top: 7px;
 }
@@ -31,14 +30,16 @@
 .themkh {
     margin-left: 68px;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 40px;
     float: right;
     height: 35px;
     margin-top: 20px;
     width: 130px;
     font-size: 15px;
     display: flex;
-    background-color: #095323
+    background-color: #095323;
+    cursor: pointer;
+    
 }
     .themkh .text {
         color: #ffffff;
@@ -55,10 +56,14 @@
     position: absolute;
     /* float: right; */
     background-image: url(../../content/icon/refresh.png);
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     /* margin-top: 50px; */
     /* margin-right: 11px; */
-    right: -2px;
+    right: 10px;
     top: 119px;
+    border: 1px solid;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }

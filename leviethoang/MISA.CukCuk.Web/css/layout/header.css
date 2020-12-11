@@ -3,14 +3,13 @@
     font-family: 'GoogleSans-Bold';
     src: url('../../content/font/GoogleSans-Bold.otf') format('opentype');
 }
-.header{
+.header {
     width: 100%;
     height: 60px;
-    background-color: #ffffff;
-    display:flex;
+    border-bottom: 1px solid #808080;
+    display: flex;
     align-items: center;
-            
-
+    padding-left: 30px;
 }
 
 .header .header-item1{

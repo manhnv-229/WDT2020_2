@@ -2,6 +2,7 @@
 @import url('layout/header.css');
 @import url('layout/nvbar.css');
 @import url('component/dialog.css');
+
 body {
 	/*font-family: 'GoogleSans-Regular';*/
 	font-size: 13px;
@@ -24,6 +25,8 @@ body {
 	height: 100vh;
 	//background-color: aqua;
 	position:fixed;
+	border-right: 1px solid #808080;
+	margin-right: 10px;
 }
 .panel-right {
 	position: absolute;
@@ -32,14 +35,16 @@ body {
 	width: calc(100% - 200px);
 	height: 100vh;
 	//background-color: bisque;
+	
 }
 .panel-left .logo {
 	padding-left: 20px;
 	align-items: center;
 	display: flex;
-	height:60px;
-	width: 200px;
+	height: 60px;
+	width: 180px;
 	//background-color: #00ff21;
+	border-right: 1px solid #808080;
 }
 .logo .expend-icon {
 	height: 30px;
@@ -97,4 +102,9 @@ body {
 }
 .icon-setting {
 	background-image: url('../content/icon/setting.png');
+}
+::-webkit-scrollbar {
+	width: 5px !important;
+	height: 5px !important;
+	/* z-index: 1231232123421; */
 }
