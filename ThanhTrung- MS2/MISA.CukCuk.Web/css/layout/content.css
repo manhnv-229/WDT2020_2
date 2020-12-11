@@ -1,10 +1,10 @@
 ﻿
 .content {
     position: absolute;
-    top: 61px;
+    top: 60px;
     left: 200px;
     width: calc(100% - 200px);
-    height: calc(100vh - 61px);
+    height: calc(100vh - 60px);
     border: 1px solid #e5e5e5e5;
 }
 .content .header-content{
@@ -37,23 +37,33 @@
         top: 10px;
         width: calc(100% - 10px);
         position: relative;
-        height: calc(100vh - 246px);
+        height: calc(100vh - 230px);
        margin-left: 10px;
     }
-.content .paging-bar {
-    height: 56px;
-    display:flex;
+.paging-bar {
+    border-top: 1px solid #bbbbbb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    padding-top: 10px;
 }
-.content .paging-bar .content-left {
-    margin-left: 10px;
-}
-.content .paging-bar .content-right {
-    position: absolute;
-    right: 10px;
-}
-.content .paging-bar .slide {
-    width: 200px;
-    height: 24px;
-    position:absolute;
-    left:500px;
-}
+    .paging-bar .paging-record-info {
+        position: absolute;
+        left: 16px;
+    }
+
+    .paging-bar .paging-record-option {
+        position: absolute;
+        right: 16px;
+    }
+
+    .paging-bar .paging-option button {
+        outline: none;
+        cursor: pointer;
+    }
+
+    .paging-bar .paging-option {
+        display: flex;
+    }

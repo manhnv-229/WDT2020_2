@@ -16,10 +16,10 @@
 }
     
 .header .restaurant-info select{
-        height:20px;
-        width: 180px;
+        height:40px;
+        width: 200px;
         border: none;
-        font-size: 14px;
+        font-size: 15px;
         outline: none;
         cursor: pointer;
     }
@@ -29,30 +29,30 @@
 
 .account-info {
     position: absolute;
-    right: 16px;
+    right: 24px;
     display: flex;
-    width: 200px;
-    height: 24px;
     align-items: center;
 }
 .account-avatar {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     background-image: url('/content/icon/avatar-default.png');
     background-size: contain;
     background-repeat: no-repeat;
+    border: 1px solid #ffffff;
 }
 .account-name {
-    margin-left: 10px;
     font-size: 14px;
+    padding: 10px;
     
 }
 
 .account-icon_option {
     margin-left: 10px;
     width: 24px;
-    height: 24px;
+    height: 16px;
     background-image: url('/content/icon/option.png');
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    cursor: pointer;
 }
