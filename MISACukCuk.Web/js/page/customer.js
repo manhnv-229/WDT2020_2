@@ -1,54 +1,22 @@
 $(document).ready(function() {
     //alert('welcome to misa!');
-    // var dialog = $( ".prompt" ).dialog({
-    //     autoOpen: false,
-    //     height: 400,
-    //     width: 350,
-    //     modal: true});
-    //thuc hien load du lieu
-
- 
-    //1. Lay du lieu
+    dialog = $(".dialog__add").dialog({
+        autoOpen: false,
+        width: 700,
+        modal: true,
+    });
+    
     loadData()
    
-
-    //2. Doc du lieu
-
-    //3. Xu ly du lieu
-
-
-
-    //4. Day du lieu vao trang HTML
-    
-    // for (let i = 0; i < 10; i++) {
-    //     $('.grid tr:last').after('<tr><td>aaaaaaa</td>abcs</tr><tr>ghghg</tr>');
-        
-    // }
+    $('#btnAdd').click(btnAddOnClick)
+    $('.btn-cancel-dialog').click(btnCancelOnClick)
 })
 
-$('#btnAdd').click(btnAddOnClick)
-$('.overlay').click(btnCloseOnClick)
-
-var dialog = $( ".prompt" ).dialog({
-    autoOpen: false,
-    modal: true,
-  });
 
 /**
  * Load du lieu
  * Author: Moo// 09/12/2020
  */
-
-function btnAddOnClick(){
-    //$('.prompt').show()
-    dialog.dialog( "open" );
-    // $('.overlay').show()
-}
-
-function btnCloseOnClick() {
-    // $('.overlay').hide()
-    alert('ui-icon-closethick')
-}
 
 function loadData() {
     $.ajax({
@@ -113,4 +81,13 @@ function formatDate(date){
     }
     year = date.getFullYear()
     return `${day}/${month}/${year}`
+}
+
+
+function btnAddOnClick(){
+    dialog.dialog( "open" );
+}
+
+function btnCancelOnClick() {
+    dialog.dialog( "close" );
 }

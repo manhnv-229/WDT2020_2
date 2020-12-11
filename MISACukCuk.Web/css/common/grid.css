@@ -18,7 +18,7 @@ th{
     background-color: #fff;
 }
 
-.grid table tr th,td{
+.grid table tr th, .grid table tr td{
     border-bottom: 1px solid #ccc;
     text-align: left;
     padding: 10px 16px;
@@ -38,6 +38,6 @@ th{
     top: 0;
 }
 
-tr:nth-child(even){
+.grid tr:nth-child(even){
     background-color: #f4f4f4;
 }

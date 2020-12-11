@@ -34,6 +34,11 @@
     background-image: url(../../content/icon/add.png);
 }
 
+.save-icon{
+    background-image: url(../../content/icon/setting.png);
+}
+
+
 .btn-search{
     background-image: url(../../content/icon/search.png);
 }

@@ -4,17 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý khách hàng - CUKCUK.VN</title>
+    <link rel="stylesheet" href="../lib/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="stylesheet" href="../lib/jquery-ui.min.css">
+   
   
 </head>
 <body>
+      
+    <div class='dialog__add' title='THÔNG TIN KHÁCH HÀNG' >
+        <div class='dialog__add-container'>
+            <table border="0" cellspacing="15">
+                <tr>
+                    <td rowspan="3" colspan="1" class='avatar-input'>
+                        <div class='avatar-holder'></div>
+                        <label>Vui lòng chọn ảnh có định dạng .jpg, .jpeg, .png, .gif.</label>
+                    </td>
+                    <td>
+                        <div>Mã khách hàng (*)</div>
+                        <div class="input"><input type="text" id="customerCode" /></div>
 
-
-    
-  
-    <div class='prompt'></div>
+                    </td>
+                    <td>
+                        <div>Họ và tên (*)</div>
+                        <div class="input"><input type="text" id="customerName" /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Mã thẻ thành viên</div>
+                        <div class="input"><input type="text" id="memberCardCode" /></div>
+                    </td>
+                    <td>
+                        <div>Nhóm khách hàng</div>
+                        <div class="input"><input type="text" id="customerGroupName" /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Ngày sinh</div>
+                        <div class="input"><input type="date" id="dateOfBirth" /></div>
+                    </td>
+                    <td>
+                        <div>Giới tính</div>
+                        <div>
+                            <input type="radio" name="gender" />
+                            <lable>Nữ</lable>
+                            <input type="radio" name="gender" />
+                            <lable>Nam</lable>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>Email</div>
+                        <div class="input"><input type="email" id="email" /></div>
+                    </td>
+                    <td>
+                        <div>Số điện thoại (*)</div>
+                        <div class="input"><input type="text" id="phoneNumber" /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>Tên công ty</div>
+                        <div class="input"><input type="text" id="companyName" /></div>
+                    </td>
+                    <td>
+                        <div>Mã số thuế</div>
+                        <div class="input"><input type="text" id="taxCode" /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div>Địa chỉ</div>
+                        <div class="input"><input type="text" id="address" /></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="dialog__add--footer">
+            <button class="btn-style btn-cancel-dialog">Hủy</button>
+            <button class="btn-style btn-save-dialog">
+                <div class="btn-icon add-icon"></div>
+                <div class="btn-text">Lưu</div>
+            </button>
+            <button class="btn-style btn-add-dialog">Lưu và thêm mới</button>
+        </div>
+        
+    </div>
 
     <div class='panel-left'>
         <div class='logo'>

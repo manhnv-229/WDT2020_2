@@ -1,9 +1,11 @@
-@import url(layout/content.css);
-@import url(layout/header.css);
-@import url(layout/menu.css);
 @import url(common/button.css);
 @import url(common/grid.css);
 @import url(common/pagination.css);
+
+@import url(layout/content.css);
+@import url(layout/header.css);
+@import url(layout/menu.css);
+@import url(layout/dialog.css);
 
 body {
     font-family: GoogleSans-Regular;
