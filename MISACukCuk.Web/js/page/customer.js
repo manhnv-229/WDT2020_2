@@ -10,6 +10,8 @@ $(document).ready(function() {
    
     $('#btnAdd').click(btnAddOnClick)
     $('.btn-cancel-dialog').click(btnCancelOnClick)
+
+    $('.grid').on('dblclick', 'tr', trOnDbClick)
 })
 
 
@@ -90,4 +92,8 @@ function btnAddOnClick(){
 
 function btnCancelOnClick() {
     dialog.dialog( "close" );
+}
+
+function trOnDbClick(){
+    dialog.dialog( "open" );
 }

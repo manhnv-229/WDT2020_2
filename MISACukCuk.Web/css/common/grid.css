@@ -4,6 +4,7 @@
     height: calc(100% - 180px);
     width: calc(100% - 32px);
     margin-left: 16px;
+    margin-top: 5px;
 }
 
 .grid table {
