@@ -1,0 +1,65 @@
+﻿.header {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: #BBBBBB solid 1px;
+}
+    .header .header__left {
+        position: relative;
+        display: flex;
+        width: 50%;
+        height: 48px;
+    }
+        .header .header__left .header__left-icon {
+            display: flex;
+            align-items: center;
+            height: 48px;
+            background-color: #ffffff;
+            border-left: #BBBBBB solid 1px;
+        }
+            .header .header__left .header__left-icon .icon-content {
+                margin-left: 16px;
+                margin-right: 10px;
+            }
+            .header .header__left .header__left-icon .icon-icon {
+                margin-top: 3px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+    .header .header__right {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 48px;
+    }
+        .header .header__right .header-user {
+            position: absolute;
+            right: 16px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+        }
+            .header .header__right .header-user .header-user-logo {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-image: url('../../content/icon/avatar-default.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 16px;
+            }
+            .header .header__right .header-user .header-user-name {
+                margin-right: 16px;
+            }
+            .header .header__right .header-user .header-user-option {
+                width: 22px;
+                height: 22px;
+                background-image: url('../../content/icon/option.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }

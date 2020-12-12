@@ -1,0 +1,194 @@
+.dialog-info {
+    position: absolute;
+    font-size: 13px;
+}
+    .dialog-info .dialog-body-footer {
+        width: 100%;
+        height: 100%;
+    }
+        .dialog-info .dialog-body-footer .dialog-body {
+            width: calc(100% - 20px);
+            height: calc(90% - 20px);
+            padding: 10px;
+        }
+            .dialog-info .dialog-body-footer .dialog-body input[type="text"], input[type='date'], input[type='email'], input[type='number'] {
+                outline: none;
+                padding: 0 10px 0 10px;
+                width: calc(100% - 10px - 10px);
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid #bbbbbb;
+            }
+            .dialog-info .dialog-body-footer .dialog-body .red-start {
+                color: red;
+            }
+            .dialog-info .dialog-body-footer .dialog-body input:focus {
+                border: 1px solid #01b075;
+            }
+            .dialog-info .dialog-body-footer .dialog-body .body-top {
+                position: relative;
+                display: flex;
+                width: 100%;
+            }
+                .dialog-info .dialog-body-footer .dialog-body .body-top .top-col {
+                    width: calc(100% / 3);
+                    padding: 10px;
+                }
+                    .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .image-avatar {
+
+                    }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .image-avatar .image {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                        }
+                            .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .image-avatar .image .avatar {
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 50%;
+                                background-image: url('../../content/img/default-avatar.jpg');
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                border: 1px solid #bbbbbb;
+                            }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .image-avatar .text {
+                            text-align: center;
+                        }
+                    
+                    .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                    }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-text {
+                            padding-left: 16px;
+                            width: calc(100% - 16px - 40px);
+                            height: 40px;
+                            border-radius: 4px 0 0 4px;
+                            background-color: #ffffff;
+                            border: 1px solid #bbbbbb;
+                            border-right: none;
+                        }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #ffffff;
+                            width: 40px;
+                            height: 40px;
+                            background-color: #01B075;
+                            border: 1px solid #bbbbbb;
+                            border-left: none;
+                            border-radius: 0 4px 4px 0;
+                        }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button:hover {
+                            background-color: #2FBE8E;
+                        }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button:active {
+                            background-color: #01B075;
+                        }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            top: 42px;
+                            left: 0;
+                            width: 100%;
+                            background-color: #ffffff;
+                            border: 1px solid #bbbbbb;
+                            position: absolute;
+                            z-index: 102;
+                        }
+                        .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button:hover .dropdown-content {
+                            display: block;
+                        }
+                            .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-content .item {
+                                width: 100%;
+                                height: 40px;
+                                display: flex;
+                                align-items: center;
+                                outline: none;
+                                border: none;
+                                background-color: white;
+                            }
+                            .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-content .item:hover {
+                                background-color: #e5e5e5;
+                            }
+                                .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button:hover .dropdown-content .item .item-icon {
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 16px;
+                                }
+                                    .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button:hover .dropdown-content .item .item-icon .icon {
+                                        display: none;
+                                    }
+                                    .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-button:hover .dropdown-content .item:focus .item-icon .icon {
+                                        display: flex;
+                                    }
+                            .dialog-info .dialog-body-footer .dialog-body .body-top .top-col .dropdown .dropdown-content .item:focus {
+                                background-color: #01B075;
+                                color: white;
+                            }
+            .dialog-info .dialog-body-footer .dialog-body .body-mid {
+                position: relative;
+                display: flex;
+                width: 100%;
+            }
+                .dialog-info .dialog-body-footer .dialog-body .body-mid .col-left {
+                    padding: 0 10px 0 10px;
+                    width: calc(100% / 3 * 2) ;
+                }
+                    
+                .dialog-info .dialog-body-footer .dialog-body .body-mid .col-right {
+                    padding: 0 10px 0 10px;
+                    width: calc(100% / 3);
+                }
+            .dialog-info .dialog-body-footer .dialog-body .body-bottom {
+                position: relative;
+                display: flex;
+                width: 100%;
+            }
+                .dialog-info .dialog-body-footer .dialog-body .body-bottom .col {
+                    padding: 0 10px 10px 10px;
+                    width: 100%;
+                }
+        .dialog-info .dialog-body-footer .dialog-footer {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 10%;
+            border-radius: 0 0 5px 5px;
+            background-color: #bbbbbb;
+        }
+            .dialog-info .dialog-body-footer .dialog-footer .col-right {
+                display: flex;
+                position: absolute;
+                right: 0;
+            }
+                .dialog-info .dialog-body-footer .dialog-footer .col-right .button {
+                    margin-right: 20px;
+                    padding: 10px 20px 10px 20px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                }
+                .dialog-info .dialog-body-footer .dialog-footer .col-right .cancel:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
+                .dialog-info .dialog-body-footer .dialog-footer .col-right .cancel:active {
+                    background-color: #E5E5E5;
+                    color: #000000;
+                }
+                .dialog-info .dialog-body-footer .dialog-footer .col-right .save, .save-and-new {
+                    background-color: #01B075;
+                }
+                .dialog-info .dialog-body-footer .dialog-footer .col-right .save:hover, .save-and-new:hover {
+                    background-color: #2FBE8E;
+                }
+                .dialog-info .dialog-body-footer .dialog-footer .col-right .save:active, .save-and-new:active {
+                    background-color: #01B075;
+                }

@@ -1,0 +1,108 @@
+﻿.menu {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    border-right: #BBBBBB solid 1px;
+}
+
+/*Logo*/
+.menu .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+}
+    .menu .logo .icon-logo {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../content/img/toggle.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .menu .logo .logo-page {
+        position: relative;
+        width: 130px;
+        height: 24px;
+        margin-left: 10px;
+        background-image: url('../../content/img/cukcuk-logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+       
+
+/*Menu content*/
+.menu .menu__content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 48px);
+}
+    .menu .menu__content .menu__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 44px;
+        width: 100%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 0;
+    }
+    .menu .menu__content .menu__item:hover {
+        background-color: #E5E5E5;
+    }
+    .menu .menu__content .menu__item:focus {
+        background-color: #019160;
+        color: #ffffff;
+    }
+        .menu .menu__content .menu__item .menu__item-logo {
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            margin-left: 20px;
+        }
+        .menu .menu__content .menu__item .menu__item-content {
+            display: flex;
+            height: 40px;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .menu .menu__content .menu__item .menu__item-logo-1 {
+            background-image: url('../../content/icon/document-online.png');
+            background-repeat: no-repeat;
+        }
+        .menu .menu__content .menu__item .menu__item-logo-2 {
+            background-image: url('../../content/icon/document-online.png');
+            background-repeat: no-repeat;
+        }
+        .menu .menu__content .menu__item .menu__item-logo-3 {
+            background-image: url('../../content/icon/report.png');
+            background-repeat: no-repeat;
+        }
+        .menu .menu__content .menu__item .menu__item-logo-4 {
+            background-image: url('../../content/icon/dashboard.png');
+            background-repeat: no-repeat;
+        }
+        .menu .menu__content .menu__item .menu__item-logo-5 {
+            background-image: url('../../content/icon/dic-employee.png');
+            background-repeat: no-repeat;
+        }
+        .menu .menu__content .menu__item .menu__item-logo-6 {
+            background-image: url('../../content/icon/setting.png');
+            background-repeat: no-repeat;
+        }
+.menu .menu__prev {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    right: 0px;
+    bottom: 30px;
+    background-color: #BBBBBB;
+    border-radius: 4px 0 0 4px; 
+    cursor: pointer;
+}
