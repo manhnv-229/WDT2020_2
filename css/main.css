@@ -13,19 +13,19 @@ body {
 }
 @font-face {
     font-family: 'GoogleSans-Black';
-    src: url('../confront/font/GoogleSans-Black.otf') format('opentype');
+    src: url('../content/font/GoogleSans-Black.otf') format('opentype');
 }
 @font-face {
     font-family: 'GoogleSans-Regular';
-    src: url('../confront/font/GoogleSans-Regular.otf') format('opentype');
+    src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
 }
 @font-face {
     font-family: 'GoogleSans-Bold';
-    src: url('../confront/font/GoogleSans-Bold.otf') format('opentype');
+    src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
 }
 @font-face {
     font-family: 'GoogleSans-Italic';
-    src: url('../confront/font/GoogleSans-Italic.otf') format('opentype');
+    src: url('../content/font/GoogleSans-Italic.otf') format('opentype');
 }
 
 .panel-left {
@@ -52,20 +52,20 @@ body {
 }
 /*Panel-left icon*/
 .logo .expend-icon {
-    padding-left:24px;
+    padding-left: 24px;
     width: 30px;
     height: 30px;
-    background-image: url('../confront/img/toggle.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
+    background-image: url('../content/img/toggle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .logo .logo-page {
-    margin-left:10px;
+    margin-left: 10px;
     width: 100%;
     height: 30px;
-    background-image: url('../confront/img/cukcuk-logo.png');
-    background-repeat:no-repeat;
-    background-size:contain;
+    background-image: url('../content/img/cukcuk-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 

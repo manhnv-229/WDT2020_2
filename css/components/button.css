@@ -10,7 +10,9 @@
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    display:flex;
+    display: flex;
+    background-color: #019160;
+    border:none;
 }
 
 .button:hover{
@@ -24,5 +26,17 @@
 
 @font-face {
     font-family: 'GoogleSans-Regular';
-    src: url('../../confront/font/GoogleSans-Regular.otf') format('opentype');
+    src: url('../../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+
+.button-refresh {
+    border: 1px solid #bbbbbb;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-image: url('/content/icon/refresh.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }
