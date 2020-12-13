@@ -1,2 +1,28 @@
-﻿body {
+﻿.button {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-family: GoogleSans-Regular;
+    color: #ffffff;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display:flex;
+}
+
+.button:hover{
+    background-color:#2FBE8E;
+}
+
+.button:focus{
+    background-color:#01B075;
+}
+
+
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../../confront/font/GoogleSans-Regular.otf') format('opentype');
 }

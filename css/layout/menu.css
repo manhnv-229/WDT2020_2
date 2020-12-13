@@ -10,9 +10,9 @@
     width:calc(100% - 20px);
     cursor:pointer;
 }
-    .menu .menu__item:hover {
-        background-color:#e5e5e5;
-    }
+.menu .menu__item:hover {
+    background-color:#e5e5e5;
+}
 
 .menu .menu__item .menu__item--icon{
     width: 24px;

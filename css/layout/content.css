@@ -2,3 +2,51 @@
     width: 100%;
     height: calc(100% - 60px);
 }
+
+.content .content-topic{
+    display:flex;
+    width: 100%;
+    height: 60px;
+    align-items:center;
+}
+
+.content .content-topic .content-name{
+    display:flex;
+    width: 300px;
+    height: 100%;
+    padding-left:15px;
+    align-items:center;
+    font-family:'GoogleSans-Black';
+    font-size:20px;
+}
+
+.content .content-topic .right-part{
+    display: flex;
+    width : calc(100% - 300px);
+    height : 100%;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.content .filter{
+    display:flex;
+    width : 100%;
+    height : 60px;
+}
+.content .left-filter{
+    display:flex;
+    width: 250px;
+    height :100%;
+    align-items:center;
+}
+.content .right-filter{
+    display:flex;
+    left:100px;
+    height:100%;
+    align-items:center;
+    justify-content:flex-end;
+}
+@font-face {
+    font-family: 'GoogleSans-Black';
+    src: url('../../confront/font/GoogleSans-Black.otf') format('opentype');
+}

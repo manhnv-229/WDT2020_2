@@ -1,7 +1,12 @@
 ﻿.header {
     width: 100%;
     height: 60px;
-    display:flex;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bbbbbb;
+    font-family: GoogleSans-Bold;
+    font-size: 13px;
 }
 
 .header .left-header{
@@ -9,10 +14,54 @@
     height: 100%;
     justify-items:center;
 }
-
+.header .left-header .branch-select {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+.header .left-header select {
+    height: 30px;
+    width: 200px;
+    color: black;
+    background-color: #ffffff;
+    align-items: center;
+    border: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin: 0px;
+    font-family: GoogleSans-Bold;
+    font-size: 15px;
+}
 .header .right-header{
     width : calc(100% - 300px);
     height: 100%;
-    align-items: end;
-    justify-items:right;
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.header .right-header .avatar-icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../../confront/icon/avatar-default.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.header .right-header .option-icon{
+    height: 30px;
+    width: 30px;
+    background-image: url('/confront/icon/option.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    cursor:pointer;
+}
+
+.header .right-header .name{
+    padding-left:5px;
+    width : 100px;
+    justify-items:center;
+    align-items :center;
 }
