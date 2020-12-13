@@ -1,6 +1,41 @@
-﻿.menu {
-    float: left;
-    width: 100px;
-    height: 100vh;
-    background-color: #ff6a00
+﻿.menu{
+    width:100%;
+}
+
+.menu .menu__item{
+    padding-left:20px;
+    display: flex;
+    align-items: center;
+    height:40px;
+    width:calc(100% - 20px);
+    cursor:pointer;
+}
+    .menu .menu__item:hover {
+        background-color:#e5e5e5;
+    }
+
+.menu .menu__item .menu__item--icon{
+    width: 24px;
+    height: 24px;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.icon-dashboard {
+    background-image: url('../../confront/icon/dashboard.png');
+}
+
+.icon-report {
+    background-image: url('../../confront/icon/report.png');
+}
+
+.icon-dic-employee {
+    background-image: url('../../confront/icon/dic-employee.png');
+}
+
+.icon-setting {
+    background-image: url('../../confront/icon/setting.png');
+}
+
+.menu .menu__item .menu__item--text {
+    margin-left: 10px;
 }
