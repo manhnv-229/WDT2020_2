@@ -5,6 +5,7 @@
 @import url('components/dialog.css');
 @import url('components/button.css');
 @import url('components/icon.css');
+@import url('components/input.css');
 body {
     margin:0px;
     font-family: 'GoogleSans-Regular';

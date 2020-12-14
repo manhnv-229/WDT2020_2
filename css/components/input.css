@@ -1,10 +1,12 @@
-﻿﻿input {
-    padding: 10px 16px;
+﻿.input-search {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    outline: none;
-    border: 1px solid #bbbbbb;
-    padding-left: 40px;
-}
-
-.input-search {
+    font-size: 12px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-image: url('../../content/icon/search.png');
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 30px;
 }
