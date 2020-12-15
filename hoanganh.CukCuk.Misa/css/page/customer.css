@@ -1,5 +1,7 @@
 ﻿.grid-customer {
     height: calc(100vh - 234px);
+    overflow-y: auto; 
+    overflow-x: auto;
 }
 
 .el-avatar-customer {
