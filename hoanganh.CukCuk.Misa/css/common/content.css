@@ -1,0 +1,69 @@
+﻿.content {
+    position: absolute;
+    top: 61px;
+    left: 221px;
+    width: calc(100% - 253px);
+    background-color: #ffffff;
+    padding: 16px 16px 0 16px;
+}
+
+    /*Page tile*/
+    .content .header-content {
+        padding: 8px 0 16px 0;
+        display: flex;
+        align-items: center;
+    }
+
+        .content .header-content .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content .header-content .content-feature {
+            position: absolute;
+            right: 16px;
+        }
+
+.filter-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+    .filter-bar .filter-left {
+    }
+
+    .filter-bar .filter-right {
+        position: absolute;
+        right: 16px;
+    }
+
+.paging-bar {
+    height: 56px;
+    border-top: 2px solid #bbbbbb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+    .paging-bar .paging-record-info {
+        position: absolute;
+        left: 16px;
+    }
+
+    .paging-bar .paging-record-option {
+        position: absolute;
+        right: 16px;
+    }
+
+    .paging-bar .paging-option button {
+        outline: none;
+        cursor: pointer;
+    }
+
+    .paging-bar .paging-option {
+        display: flex;
+    }
