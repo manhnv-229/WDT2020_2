@@ -1,12 +1,10 @@
 ﻿.header {
-    position: absolute;
-    top: 0;
-    left: 200px;
-    width: calc(100% - 200px);
-    height: 60px;
-    align-items: center;
-    border: 1px solid #e5e5e5e5;
+    position: relative;
     display: flex;
+    align-items: center;
+    width: calc(100% - 221px);
+    height: 60px;
+    border-bottom: 1px solid #bbbbbb;
 }
 
 .header .restaurant-info{
@@ -22,6 +20,7 @@
         font-size: 15px;
         outline: none;
         cursor: pointer;
+        font-weight: bold;
     }
 .header .restaurant-info option{
     cursor: pointer;

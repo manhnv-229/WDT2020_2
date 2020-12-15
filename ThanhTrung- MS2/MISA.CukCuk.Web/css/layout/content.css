@@ -1,14 +1,15 @@
 ﻿
 .content {
     position: absolute;
-    top: 60px;
-    left: 200px;
-    width: calc(100% - 200px);
-    height: calc(100vh - 60px);
+    top: 61px;
+    left: 221px;
+    width: calc(100% - 253px);
     border: 1px solid #e5e5e5e5;
+    padding: 16px 16px 0px 16px;
+    height: 100%;
 }
 .content .header-content{
-    padding:16px;
+   padding:8px 0px 16px 10px;
    background-color:#ffffff;
    display: flex;
    align-items: center;
@@ -33,37 +34,4 @@
         margin-left: 10px;
     }
 
-    .content .grid-customer {
-        top: 10px;
-        width: calc(100% - 10px);
-        position: relative;
-        height: calc(100vh - 230px);
-       margin-left: 10px;
-    }
-.paging-bar {
-    border-top: 1px solid #bbbbbb;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 16px;
-    padding-top: 10px;
-}
-    .paging-bar .paging-record-info {
-        position: absolute;
-        left: 16px;
-    }
 
-    .paging-bar .paging-record-option {
-        position: absolute;
-        right: 16px;
-    }
-
-    .paging-bar .paging-option button {
-        outline: none;
-        cursor: pointer;
-    }
-
-    .paging-bar .paging-option {
-        display: flex;
-    }
