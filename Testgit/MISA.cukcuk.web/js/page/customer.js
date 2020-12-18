@@ -37,7 +37,7 @@ function loadData() {
 
             var dateString = formatDate(dob);
 
-            var trHTML = `<tr>  <td>${customerCode}</td>
+            var trHTML = `<tr class="hover_tr">  <td>${customerCode}</td>
                                 <td>${fullName}</td>
                                 <td>${gender}</td>
                                 <td>${dateString}</td>
@@ -61,23 +61,24 @@ function loadData() {
     // 4. đẩy dữ liệu vào trang HTML
 }
 
+
 /**
  * Hàm định dạng ngày tháng năm
  * @param {Date} date
  */
 function formatDate(date) {
     var date = new Date(date);
+
     day = date.getDate();
-    if (day < 10) {
-        day = "0" + day;
-    }
+    day = day < 10 ? "0" + day : day;
+
     month = date.getMonth() + 1;
-    if (month < 10) {
-        month = "0" + month;
-    }
+    month = month < 10 ? "0" + month : month;
+
     year = date.getFullYear();
     return day + "-" + month + "-" + year;
 }
+
 
 /**
  * Hàm xử lý sự kiện onClick button Add_Customer
@@ -85,6 +86,7 @@ function formatDate(date) {
 function btnAddCustomer_onClick() {
     $('.dialog').show();
 }
+
 
 /**
  * Hàm xử lý sự kiện onClick button Cancel để ẩn Dialog
