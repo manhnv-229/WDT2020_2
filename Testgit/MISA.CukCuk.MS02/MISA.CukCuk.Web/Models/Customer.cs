@@ -7,11 +7,17 @@ namespace MISA.CukCuk.Web.Models
 {
     public class Customer
     {
-        public Guid CustomerID { get; set; }
+        public Customer()
+        {
+            CustomerId = Guid.NewGuid();
+        }
+
+
+        public Guid CustomerId { get; set; }
         public string CustomerCode { get; set; }
         public string FullName { get; set; }
         public string MemberCardCode { get; set; }
-        public Guid CustomerGroupID { get; set; }
+        public Guid CustomerGroupId { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public int? Gender { get; set; }
         public string Email { get; set; }

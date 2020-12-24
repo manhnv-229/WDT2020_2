@@ -15,12 +15,8 @@ namespace MISA.CukCuk.Web.Controllers
 {
     //[Route("api/v1/[controller]")]
     //[ApiController]
-    public class CustomersController : BaseEntityController<Customer>
+    public class CustomerGroupsController : BaseEntityController<CustomerGroup>
     {
-        public override IEnumerable<Customer> Get()
-        {
-            var sql = "SELECT * FROM Customer LIMIT 2";
-            return _dbConnector.GetData(sql);
-        }
+        
     }
 }
