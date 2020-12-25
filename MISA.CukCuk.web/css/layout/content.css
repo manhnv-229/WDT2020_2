@@ -3,7 +3,7 @@
 	top: 48px;
 	right: 0px;
 	width: calc(100% - 200px);
-	height: calc(100% - 48px);
+	height: calc(100vh - 48px);
 	box-sizing: border-box; /*tăng padding hay border không làm thay đổi size*/
 	padding: 16px;
 }
@@ -25,6 +25,9 @@
 		display: flex;
 		align-items: center;
 	}
+
+
+
 
 	.content .content-footer {
 		position: relative;
@@ -77,3 +80,20 @@
 			.content .content-footer .content-footer-page .page-number:hover{
 				background-color: #2FBE8E;
 			}
+
+
+/*scroll đẹp*/
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 3px #bdbdbd;
+	border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	box-shadow: inset 0 0 300px #bdbdbd;
+}

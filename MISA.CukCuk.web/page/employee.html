@@ -1,18 +1,21 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
     <title>MISA Cuk Cuk - Phần mềm quản lý nhà hàng</title>
-    <link href="../css/main.css" rel="stylesheet" />
-    <link href="../css/page/employee.css" rel="stylesheet" />
+    <link href="../lib/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+    <link href="../lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/page/employee.css" type="text/css">
     <script src="https://kit.fontawesome.com/87cb69237f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="menu">
         <div class="logo">
             <div class="icon-bar"></div>
-            <div class="logo-page"></div> 
+            <div class="logo-page"></div>
         </div>
         <div class="menu__content">
             <div class="menu__content-item">
@@ -28,7 +31,7 @@
                 <div class="menu__content-text">Theo dõi cho</div>
             </div>
             <div class="menu__content-item">
-                <div class="menu__content-icon" style="background-image: url('../content/icon/dashboard.png');" ></div>
+                <div class="menu__content-icon" style="background-image: url('../content/icon/dashboard.png');"></div>
                 <div class="menu__content-text">Theo dõi đóng</div>
             </div>
             <div class="menu__content-item">
@@ -45,12 +48,12 @@
         <div class="header-left">
             <div class="header-left-text">Công ty cổ phần MISA TEST BHXH</div>
             <div class="header-left-button">
-                    <button class="button-icon"><i class="fas fa-chevron-down"></i></button>
-                    <div class="button-text">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
+                <button class="button-icon"><i class="fas fa-chevron-down"></i></button>
+                <div class="button-text">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
         </div>
 
@@ -68,215 +71,37 @@
                     <img class="header-button1-icon" src="../content/icon/radio@2x.png" />
                     <div style="color: #01B075;font-family: GoogleSans-Regular; margin-left:10px;">Đồng bộ từ HRM</div>
                 </button>
-                <button class="content-header-right-button button2" type="button" onclick="alert('Hello world!')">
+                <button class="content-header-right-button button2" type="button">
                     <img class="header-button2-icon" src="../content/icon/add.png" />
-                    <div style="color: #ffffff;font-family: GoogleSans-Regular; margin-left:10px;" >Thêm lao động</div>
+                    <div style="color: #ffffff;font-family: GoogleSans-Regular; margin-left:10px;">Thêm khách hàng</div>
                 </button>
                 <button class="content-header-right-button button3"><i class="fas fa-chevron-down" style="color: #ffffff;"></i></button>
             </div>
         </div>
         <form class="content-form">
-                <input class="content-form1" type="text" placeholder="Tìm kiếm theo mã nhân viên, họ tên" id="fname" name="fname"><br>
+            <input class="content-form1" type="text" placeholder="Tìm kiếm theo mã nhân viên, họ tên" id="fname" name="fname"><br>
         </form>
         <div class="content-table">
-            <table>
-                <tr>
-                    <th style="width: 3%;">STT</th>
-                    <th style="width: 8%;">Mã nhân viên</th>
-                    <th style="width: 15%;">Họ và tên</th>
-                    <th style="width: 8%;">Mã số BHXH</th>
-                    <th style="width: 5%;">Giới tính</th>
-                    <th style="width: 12%;">Vị trí/chức vụ</th>
-                    <th style="width: 12%;">Bộ phân/phòng ban</th>
-                    <th style="width: 15%;">Hệ số/Mức lương đóng</th>
-                    <th style="width: 12%;">Trạng thái tham gia</thstyle="width:>
-                    <th>Bệnh viện</th>
-
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
-                <tr>
-                    <td>200</td>
-                    <td>MS03-09</td>
-                    <td>Nguyễn Thị Thiêm</td>
-                    <td>122383562</td>
-                    <td>Nữ</td>
-                    <td>Nhân viên</td>
-                    <td>Văn phòng Hà Nội</td>
-                    <td>5,500,000</td>
-                    <td>Đang tham gia</td>
-                    <td>Bệnh viện đa khoa Hà Nội</td>
-                </tr>
+            <table id="contentTable">
+                <thead style="z-index: 1;">
+                    <tr>
+                        <th style="width: 8%;">Mã nhân viên</th>
+                        <th style="width: 15%;">Họ và tên</th>
+                        <th style="width: 5%;">Giới tính</th>
+                        <th style="width: 8%;">Ngày sinh</th>
+                        <th style="width: 10%;">Số điện thoại</th>
+                        <th style="width: 20%;">Địa chỉ</th>
+                        <th style="width: 15%;">Email</th>
+                        <th>Nhóm khác hàng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
             </table>
         </div>
+
         <div class="content-footer">
-            <div class="content-footer-text">Hiển thị danh sách...lao động</div>
+            <div class="content-footer-text">Hiển thị danh sách <span id="number"></span> lao động</div>
             <div class="content-footer-page">
                 <img src="../content/icon/btn-firstpage.svg" />
                 <img src="../content/icon/btn-prev-page.svg" />
@@ -290,5 +115,95 @@
             </div>
         </div>
     </div>
+    <div>
+    </div>
+    <!-- dialog thêm nhân viên -->
+    <div class="addCustomer-dialog" title="Thông tin khách hàng" style="display: none;">
+        <div class="dialog-content">
+            <div class="dialog-body">
+                <div class="one-row three-col">
+                    <div class="dialog-avt">
+                        <div class="dialog-avt-img"></div>
+                        <div class="dialog-avt-text" style="text-align: center;">Vui lòng chọn ảnh có định dạng<br><b>.jpg .jpeg .png .gif</b></div>
+                    </div>
+                    <div class="three-row two-col">
+                        <div class="one-row two-col flex-1">
+                            <div class="CustomerCode">
+                                <label>Mã khách hàng (<span id="label-required">*</span>)</label><br>
+                                <input class="input-CustomerCode" id="dialog-input" type="text" />
+                            </div>
+                            <div class="FullName">
+                                <label>Họ và tên (<span id="label-required">*</span>)</label><br>
+                                <input class="input-FullName" id="dialog-input" type="text" />
+                            </div>
+                        </div>
+                        <div class="one-row two-col flex-1">
+                            <div class="MemberCardCode">
+                                <label>Mã thẻ</label><br>
+                                <input class="inputMemberCardCode" id="dialog-input" type="text" />
+                            </div>
+                            <div class="CustomerGroup">
+                                <label>Nhóm khách hàng:</label><br>
+                                <select class="inputCustomerGroup" id="dialog-input" style="padding = 5px;">
+                                    <option>Khách hàng VIP</option>
+                                    <option>Khách hàng mới</option>
+                                    <option>Khách hàng MISA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="one-row two-col flex-1">
+                            <div class="DateOfBirth">
+                                <label>Ngày sinh</label><br>
+                                <input class="inputDateOfBirth" id="dialog-input" type="date" />
+                            </div>
+                            <div class="Gender">
+                                <label>Giới tính</label><br>
+                                <input type="radio" class="inputGender" id="Male" value="Male"> <label for="Gender">Nam</label>
+                                <input type="radio" class="inputGender" id="Female" value="Female"> <label for="Gender">Nữ</label>
+                                <input type="radio" class="inputGender" id="Other" value="Other"> <label for="Gender">Khác</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-row two-col flex-1">
+                    <div class="Email">
+                        <label>Email</label><br>
+                        <input class="inputEmail" id="dialog-input" type="email" />
+                    </div>
+                    <div class="PhoneNumber">
+                        <label>Số điện thoại (<span id="label-required">*</span>)</label><br>
+                        <input class="inputPhoneNumber" id="dialog-input" type="number" />
+                    </div>
+                </div>
+                <div class="one-row two-col flex-1">
+                    <div class="CompanyName">
+                        <label>Tên công ty</label><br>
+                        <input class="inputCompanyName" id="dialog-input" type="text" />
+                    </div>
+                    <div class="CompanyTaxCode">
+                        <label>Mã số thuế</label><br>
+                        <input class="inputCompanyTaxCode" id="dialog-input" type="text" />
+                    </div>
+                </div>
+                <div class="one-row one-col">
+                    <div class="Address">
+                        <label>Địa chỉ</label><br>
+                        <input class="inputAddress" id="dialog-input" type="text" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="dialog-footer">
+                <button id="dialog-Cancel"><span class="Cancel-text">Hủy</span></button>
+                <button id="dialog-Save"><span class="Save-text">Lưu</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <script src="../lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="../lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/page/employee.js"></script>
 </body>
 </html>

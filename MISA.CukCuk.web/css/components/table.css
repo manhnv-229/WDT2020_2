@@ -1,26 +1,49 @@
 ﻿
 .content .content-table {
-    background-color: #ffffff;
     width: 100%;
     height: calc(100% - 144px);
     overflow: auto;
 }
-    .content .content-table table {
-        border-collapse: collapse;
+    .content .content-table #contentTable {
         width: 100%;
-        height: calc(100% - 150px);
+        height: calc(100% - 144px);
+        border-collapse: collapse;
     }
-        .content .content-table table tr, th {
+
+        .content .content-table #contentTable th, tr {
             height: 48px;
             border-bottom: 1px solid #e5e5e5;
+            cursor: pointer;
         }
-        .content .content-table table th {
+
+        /*tiêu đề th của bảng giữ nguyên khi cuộn*/
+        .content .content-table #contentTable th {
             position: sticky;
             top: 0;
-            z-index: 99;
+            z-index: 0;
             background-color: #ffffff;
             text-align: left;
-        } /*tiêu đề giữ nguyên khi cuộn*/
-        /*.content .content-table table tr:nth-child(even){
+
+        }
+
+    
+        /*đổi màu những hàng chẵn*/
+        .content .content-table table tr:nth-child(even){
             background-color: #E9EBEE;
-         }*/
+         }
+
+
+
+    .content .content-table table tr:hover {
+        background-color: #BBBBBB;
+    }
+
+
+        /*Hiển thị ... vào cuối nếu text trong cột dài*/
+        .content .content-table table td {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            box-sizing: border-box;
+            max-width: 170px;
+        }

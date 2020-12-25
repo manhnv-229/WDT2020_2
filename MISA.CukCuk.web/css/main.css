@@ -2,10 +2,14 @@
 @import url('components/combobox.css');
 @import url('components/input.css');
 @import url('components/table.css');
+
+@import url('common/dialog.css');
+
 @import url('layout/content.css');
 @import url('layout/header.css');
 @import url('layout/menu.css');
 @import url('page/employee.css');
+
 
 
 
