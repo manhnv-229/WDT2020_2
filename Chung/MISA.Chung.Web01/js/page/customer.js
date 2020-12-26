@@ -87,6 +87,7 @@ function addCustomer() {
         $("#tbListData tbody").append(trHTML);
         $(".m-dialog").hide();
     })
+    
 }
 
 
