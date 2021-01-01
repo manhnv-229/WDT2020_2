@@ -6,7 +6,7 @@
         modal: true,
     });
 
-    //loadData();
+    loadData();
     reload();
     initEvens();
     addCustomer();
@@ -21,7 +21,7 @@ function loadData() {
     // 1. Bước 1: gọi service lấy dữ liệu: (api.manhnv.net/api/customes)
     debugger;
     $.ajax({
-        url: 'http://api.manhnv.net/api/customers',
+        url: 'https://localhost:44384/api/Customers',
         method: 'GET',
     }).done(function (response) {
         console.log(response);
@@ -30,66 +30,121 @@ function loadData() {
 
         // 3. Bước 3: Build html và append lên UI:
         $('#tbListData tbody').empty();
-        for (var i = 0; i < response.length; i++) {
+        for (var i = 0; i < 501; i++) {
             console.log(response[i]);
             var DOB = formatDate(response[i].DateOfBirth);
+            var gender = gender(response[i].GenderName);
             var trHtml = `<tr class="el-table__row first">
-                        <td rowspan="1" colspan="1" style="width: 100px;">
-                            <div class="cell">${response[i].CustomerCode}</div>
-                        </td>
-                        <td rowspan="1" colspan="1" style="width: 143px;">
-                            <div class="cell">${response[i].FullName}</div>
-                        </td>
-                        <td rowspan="1" colspan="1" style="width: 58px;"><div class="cell">${response[i].GenderName}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 100px;"><div class="cell text-align-center">${DOB}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 72px;"><div class="cell">${response[i].CustomerGroupName}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 119px;"><div class="cell">${response[i].PhoneNumber}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 192px;"><div class="cell">${response[i].Email}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 232px;"><div class="cell">${response[i].Address}</div></td>
-                        <td rowspan="1" colspan="1" class="text-align-right" style="width: 55px;"><div class="cell">${response[i].DebitAmount || ""}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 98px;"><div class="cell">${response[i].MemberCardCode}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 32px;"><div class="cell"></div></td>
+                        <td rowspan="1" colspan="1" style="width: 190px;"><div class="cell">${response[i].StaffCode}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 133px;"><div class="cell">${response[i].FullName}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 48px;"><div class="cell">${response[i].GenderName}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 90px;"><div class="cell text-align-center">${DOB}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 62px;"><div class="cell">${response[i].PhoneNumber}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 109px;"><div class="cell">${response[i].Email}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 182px;"><div class="cell">${response[i].Positon}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 222px;"><div class="cell">${response[i].Room}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 88px;"><div class="cell">${response[i].Work}</div></td>
                     </tr>`;
             $('#tbListData >tbody:last-child').append(trHtml);
-
-            
         }
 
     }).fail(function (response) {
 
     })
 
+
+    
+
 }
 
 function addCustomer() {
     $("#btnSave").click(function () {
-        var customerCode = $("#txtCustomerCode").val();
+        var staffCode = $("#txtStaffCode").val();
         var fullName = $("#txtFullName").val();
-        var memberCardCode = $("#txtMemberCardCode").val();
-        var customerGroupName = $("#cbxCustomerGroup").children("option").filter(":selected").text();
         var dob = formatDate($("#dtDateOfBirth").val());
         var gender = $("#cbxGender").children("option").filter(":selected").text();
+        var CCCD = $("#txtCCCD").val();
+        var CCCDDate = formatDate($("#dtCCCDDate").val());
+        var address = $("#txtAdrress").val();
         var email = $("#txtEmail").val();
         var phoneNumber = $("#txtPhoneNumber").val();
-        var address = $("#txtAdrress").val();
-        var trHTML = `<tr>
-                        <td>${customerCode}</td>
-                        <td>${fullName}</td>
-                        <td>${gender}</td>
-                        <td>${dob}</td>
-                        <td>${customerGroupName}</td>
-                        <td>${phoneNumber}</td>
-                        <td>${email}</td>
-                        <td>${address}</td>
-                        <td>${"Chưa rõ"}</td>
-                        <td>${memberCardCode}</td>
-                        </tr>`;
-        $("#tbListData tbody").append(trHTML);
+        var position = $("#cbxPosition").children("option").filter(":selected").text();
+        var room = $("#cbxRoom").children("option").filter(":selected").text();
+        var taxNumber = $("#txtTaxNumber").val();
+        var salary = $("#txtSalary").val();
+        var joinedDate = formatDate($("#dtJoinDate").val());
+        var work = $("#cbxWork").children("option").filter(":selected").text();
+        if (!staffCode) {
+            alert("Không được bỏ trống mã nhân viên !");
+            return;
+        }
+        if (!fullName) {
+            alert("Không được bỏ trống Họ và Tên !");
+            return;
+        }
+        if (!email) {
+            alert("Không được bỏ trống Email !");
+            return;
+        }
+        //if (!phoneNumber) {
+        //    alert("Không được bỏ trống Số điện thoại !");
+        //    return;
+        //}
+        if (!CCCD) {
+            alert("Không được bỏ trống Số CMTND/CCCD !");
+            return;
+        }
+        var staff = {
+            "StaffCode": staffCode,
+            "FullName": fullName,
+            "CCCD": CCCD,
+            "CCCDDate": CCCDDate,
+            "DOB": dob,
+            "GenderName": gender,
+            "Email": email,
+            "PhoneNumber": phoneNumber,
+            "Position": position,
+            "TaxNumber": taxNumber,
+            "Salary": salary,
+            "Room": room,
+            "JoinDate": room,
+            "Work": work,
+            "Address": address
+        }
+        $.ajax({
+            url: 'https://localhost:44384/api/Staff',
+            method: 'POST',
+            data: JSON.stringify(staff),
+            contentType: 'application/json'
+        }).done(function (res){
+            console.info(res);
+        }).fail(function (res) {
+            console.info(res);
+        })
         $(".m-dialog").hide();
     })
     
 }
 
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 
 function reload() {
     $('#btnRefresh').click(function () {
@@ -126,4 +181,16 @@ function formatDate(date) {
     // lấy năm:
     var year = date.getFullYear();
     return day + '/' + month + '/' + year;
+}
+
+function gender(gender) {
+    var gender = new GenderName(gender);
+    if (gender == 1) {
+        return "Nam";
+    }
+    else if (gender == 0) {
+        return "Nữ";
+    }
+
+    return "Khác";
 }
