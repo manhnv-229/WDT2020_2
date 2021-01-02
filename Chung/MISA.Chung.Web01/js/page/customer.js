@@ -1,4 +1,6 @@
-﻿$(document).ready(function () {
+﻿
+
+$(document).ready(function () {
 
     dialog = $(".m-dialog").dialog({
         autoOpen: false,
@@ -9,6 +11,7 @@
     loadData();
     reload();
     initEvens();
+    //formatDate();
     addCustomer();
 })
 
@@ -24,21 +27,19 @@ function loadData() {
         url: 'https://localhost:44384/api/Customers',
         method: 'GET',
     }).done(function (response) {
-        console.log(response);
-        debugger;
         // 2. Bước 2: xử lý dữ liệu
 
         // 3. Bước 3: Build html và append lên UI:
         $('#tbListData tbody').empty();
-        for (var i = 0; i < 501; i++) {
-            console.log(response[i]);
-            var DOB = formatDate(response[i].DateOfBirth);
-            var gender = gender(response[i].GenderName);
+        for (var i = 0; i < response.length; i++) {
+            console.log(response[i].GenderName);
+            //var DOB = formatDate(response[i].DateOfBirth);
+            //var gender = formatGender(response[i].GenderName);
             var trHtml = `<tr class="el-table__row first">
                         <td rowspan="1" colspan="1" style="width: 190px;"><div class="cell">${response[i].StaffCode}</div></td>
                         <td rowspan="1" colspan="1" style="width: 133px;"><div class="cell">${response[i].FullName}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 48px;"><div class="cell">${response[i].GenderName}</div></td>
-                        <td rowspan="1" colspan="1" style="width: 90px;"><div class="cell text-align-center">${DOB}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 48px;"><div class="cell">${formatGender(response[i].GenderName)}</div></td>
+                        <td rowspan="1" colspan="1" style="width: 90px;"><div class="cell text-align-center">${formatDate(response[i].DOB)}</div></td>
                         <td rowspan="1" colspan="1" style="width: 62px;"><div class="cell">${response[i].PhoneNumber}</div></td>
                         <td rowspan="1" colspan="1" style="width: 109px;"><div class="cell">${response[i].Email}</div></td>
                         <td rowspan="1" colspan="1" style="width: 182px;"><div class="cell">${response[i].Positon}</div></td>
@@ -53,7 +54,7 @@ function loadData() {
     })
 
 
-    
+
 
 }
 
@@ -74,24 +75,8 @@ function addCustomer() {
         var salary = $("#txtSalary").val();
         var joinedDate = formatDate($("#dtJoinDate").val());
         var work = $("#cbxWork").children("option").filter(":selected").text();
-        if (!staffCode) {
-            alert("Không được bỏ trống mã nhân viên !");
-            return;
-        }
-        if (!fullName) {
-            alert("Không được bỏ trống Họ và Tên !");
-            return;
-        }
-        if (!email) {
-            alert("Không được bỏ trống Email !");
-            return;
-        }
-        //if (!phoneNumber) {
-        //    alert("Không được bỏ trống Số điện thoại !");
-        //    return;
-        //}
-        if (!CCCD) {
-            alert("Không được bỏ trống Số CMTND/CCCD !");
+        if (!staffCode || !fullName || !email || !CCCD || !phoneNumber) {
+            alert("Không được bỏ trống!");
             return;
         }
         var staff = {
@@ -107,7 +92,7 @@ function addCustomer() {
             "TaxNumber": taxNumber,
             "Salary": salary,
             "Room": room,
-            "JoinDate": room,
+            "JoinDate": joinedDate,
             "Work": work,
             "Address": address
         }
@@ -116,14 +101,14 @@ function addCustomer() {
             method: 'POST',
             data: JSON.stringify(staff),
             contentType: 'application/json'
-        }).done(function (res){
+        }).done(function (res) {
             console.info(res);
         }).fail(function (res) {
             console.info(res);
         })
         $(".m-dialog").hide();
     })
-    
+
 }
 
 function myFunction() {
@@ -174,23 +159,22 @@ function formatDate(date) {
     var date = new Date(date);
     // lấy ngày:
     var day = date.getDate();
-   
+
     // lấy tháng:
     var month = date.getMonth() + 1;
-   
+
     // lấy năm:
     var year = date.getFullYear();
     return day + '/' + month + '/' + year;
 }
 
-function gender(gender) {
-    var gender = new GenderName(gender);
-    if (gender == 1) {
+function formatGender(gender) {
+    if (gender = 1) {
+
         return "Nam";
     }
-    else if (gender == 0) {
+    else if (gender = 0) {
         return "Nữ";
     }
-
-    return "Khác";
+    //else return "Khác";
 }
