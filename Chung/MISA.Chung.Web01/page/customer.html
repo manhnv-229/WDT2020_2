@@ -7,27 +7,6 @@
     <link href="/css/common/main.css" rel="stylesheet" />
     <link href="/css/page/customer.css" rel="stylesheet" />
     <link href="/css/common/element.css" rel="stylesheet" />
-    <style>
-        /* width */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
-    </style>
 </head>
 <body>
 
@@ -50,10 +29,6 @@
             <a class="nav-item">
                 <div class="nav-item-icon nav-item-dashboard"></div>
                 <div class="nav-item-text">Mua hàng</div>
-            </a>
-            <a class="nav-item" href="employee.html">
-                <div class="nav-item-icon nav-item-dic"></div>
-                <div class="nav-item-text">Danh sách nhân viên</div>
             </a>
             <a class="nav-item" href="customer.html">
                 <div class="nav-item-icon nav-item-dic"></div>
@@ -94,18 +69,19 @@
         </div>
         <div class="filter-bar">
             <div class="filter-left">
-                <input class="icon-search input-search" type="text" style="width: 200px" placeholder="Tìm kiếm theo Mã, Tên nhân viên" />
-                <select name="position" id="position">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <input type="text" id="txtSearchCodePhoneName" class="search-text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại nhân viên" />
+                <select id="cbxJobSearch">
+                    <option value="">Tất cả vị trí</option>
+                    <option value="1">Thu ngân</option>
+                    <option value="2">Nhân viên Marketing</option>
+                    <option value="3">Giám đốc</option>
                 </select>
-                <select name="room" id="room">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <select id="cbxDepartmentSearch">
+                    <option value="">Tất cả phòng ban</option>
+                    <option value="1">Phòng đào tạo</option>
+                    <option value="2">Phòng công nghệ</option>
+                    <option value="3">Phòng nhân sự</option>
+                    <option value="4">Phòng Marketing</option>
                 </select>
             </div>
             <div class="filter-right">
@@ -113,7 +89,7 @@
                 </button>
             </div>
         </div>
-        <div class="grid grid-customer el-table el-table--fit el-table--scrollable-y el-table--enable-row-hover el-table--enable-row-transition">
+        <div style="overflow: scroll" class="grid grid-customer el-table el-table--fit el-table--scrollable-y el-table--enable-row-hover el-table--enable-row-transition">
             <table id="tbListData" cellspacing="0" cellpadding="0" border="0" class="el-table__body" style="min-width: 100%;">
                 <thead class="has-gutter">
                     <tr class="el-table__row">
@@ -170,7 +146,7 @@
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Mã nhân viên (<span class="label-required">*</span>)</div>
-                                <div class="m-control"><input id="txtCustomerCode" fieldName="StaffCode" required class="input-required" type="text" /></div>
+                                <div class="m-control"><input id="txtEmployeeCode" fieldName="StaffCode" required class="input-required" type="text" /></div>
                             </div>
                             <div class="m-flex-2 mg-left-20px">
                                 <div class="m-label">Họ và tên (<span class="label-required">*</span>)</div>
@@ -189,6 +165,7 @@
                                 <select id="cbxGender">
                                     <option value="0">Nam</option>
                                     <option value="1">Nữ</option>
+                                    <option value="2">Khác</option>
                                 </select>
                             </div>
                         </div>
@@ -199,13 +176,13 @@
                             </div>
                             <div class="m-flex-2 mg-left-20px">
                                 <div class="m-label">Ngày Cấp</div>
-                                <div class="m-control"><input id="dtDateOfBirth" fieldName="DateOfBirth" type="date" /></div>
+                                <div class="m-control"><input id="dtCCCDDate" fieldName="dtCCCDDate" type="date" /></div>
                             </div>
                         </div>
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Nơi cấp</div>
-                                <div class="m-control"><input type="text" fieldName="place" /></div>
+                                <div class="m-control"><input id="txtAddress" type="text" fieldName="place" /></div>
                             </div>
                             <div class="m-flex-1 mg-left-20px">
 
@@ -214,63 +191,68 @@
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Email (<span class="label-required">*</span>)</div>
-                                <div class="m-control"><input id="txtEmail" fieldName="Email" type="email" placeholder="example@domain.com" /></div>
+                                <div class="m-control"><input id="txtEmail" fieldName="Email" type="text" placeholder="example@domain.com" /></div>
                             </div>
                             <div class="m-flex-2 mg-left-20px">
                                 <div class="m-label">Số điện thoại (<span class="label-required">*</span>)</div>
-                                <div class="m-control"><input type="text" fieldName="PhoneNumber" /></div>
+                                <div class="m-control"><input id="txtPhoneNumber" type="text" fieldName="PhoneNumber" /></div>
                             </div>
                         </div>
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Vị trí</div>
-                                <select id="cbxGender">
-                                    <option value="0">Nam</option>
-                                    <option value="1">Nữ</option>
+                                <select id="cbxPosition">
+                                    <option value="1">Thu ngân</option>
+                                    <option value="2">Nhân viên Marketing</option>
+                                    <option value="3">Giám đốc</option>
                                 </select>
                             </div>
                             <div class="m-flex-2 mg-left-20px">
                                 <div class="m-label">Phòng ban</div>
-                                <select id="cbxGender">
-                                    <option value="0">Nam</option>
-                                    <option value="1">Nữ</option>
+                                <select id="cbxRoom">
+                                    <option value="1">Phòng đào tạo</option>
+                                    <option value="2">Phòng công nghệ</option>
+                                    <option value="3">Phòng nhân sự</option>
+                                    <option value="4">Phòng Marketing</option>
                                 </select>
                             </div>
                         </div>
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Mã số thuế cá nhân</div>
-                                <div class="m-control"><input type="text" fieldName="taxNumber" /></div>
+                                <div class="m-control"><input id="txtTaxNumber" type="text" fieldName="taxNumber" /></div>
                             </div>
                             <div class="m-flex-2 mg-left-20px">
                                 <div class="m-label">Mức lương cơ bản</div>
-                                <div class="m-control"><input id="txtEmail" fieldName="Email" type="email" placeholder="(VNĐ)" /></div>
+                                <div class="m-control"><input id="txtSalary" fieldName="salary" type="email" placeholder="(VNĐ)" /></div>
                             </div>
                         </div>
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Ngày gia nhập công ty</div>
-                                <div class="m-control"><input id="dtDateOfBirth" fieldName="DateOfBirth" type="date" /></div>
+                                <div class="m-control"><input id="dtJoinDate" fieldName="joinDate" type="date" /></div>
                             </div>
                             <div class="m-flex-2 mg-left-20px">
                                 <div class="m-label">Tình trạng công việc</div>
-                                <select id="cbxGender">
-                                    <option value="0">Nam</option>
-                                    <option value="1">Nữ</option>
-                                </select>
+                                <div class="m-control"><input id="txtWork" fieldName="work" type="text" /></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dialog-footer">
-                <button id="btnCancel" class="m-btn m-btn-default m-btn-cancel">Hủy</button>
-                <button id="btnSave" class="m-btn m-btn-default"><i class="far fa-save"></i><span class="btn-text">Lưu</span></button>
-            </div>
         </div>
+        <div class="dialog-footer">
+            <button id="btnCancel" class="m-btn m-btn-default m-btn-cancel">Hủy</button>
+            <button id="btnSave" class="m-btn m-btn-default"><i class="far fa-save"></i><span class="btn-text">Lưu</span></button>
+            <button id="btnUpdate" class="m-btn m-btn-default"><i class="far fa-save"></i><span class="btn-text">Cập nhật</span></button>
+        </div>
+    </div>
+    <div class="del-dialog">
+        <button id="btnDel" class="m-btn m-btn-default"><i class="far fa-save"></i><span class="btn-text">Xóa</span></button>
+        <button id="btnCancel" class="m-btn m-btn-default m-btn-cancel">Hủy</button>
     </div>
     <script src="/lib/jquery-3.5.1.min.js" type="text/javascript"></script>
     <script src="/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-    <script src="/js/page/customer.js"></script>
+    <script src="/js/page/employee.js"></script>
 </body>
 </html>

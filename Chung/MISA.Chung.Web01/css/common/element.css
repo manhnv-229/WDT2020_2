@@ -9,7 +9,7 @@
     width: 100%;
     min-width: 100%;
     font-size: 14px;
-    color: #606266
+    color: #606266;
 }
 
 .el-table--mini, .el-table--small, .el-table__expand-icon {
@@ -119,7 +119,7 @@
 
 .el-table td, .el-table th {
     padding: 10px 16px;
-    min-width: 100px;
+    min-width: 0px;
     max-width: 500px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -165,7 +165,9 @@
     padding: 10px 16px
 }
 
-
+#el-table__row first tr:hover {
+    background-color: #e5e5e5;
+}
 .el-table tr input[type=checkbox] {
     margin: 0
 }
