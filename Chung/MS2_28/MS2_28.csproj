@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CHUNG\CHUNG\MS2_28.BL\MS2_28.BL.csproj" />
+    <ProjectReference Include="..\..\CHUNG\CHUNG\MS2_28.DL\MS2_28.DL.csproj" />
+    <ProjectReference Include="..\..\CHUNG\CHUNG\MS2_Models\MS2_Models.csproj" />
+  </ItemGroup>
+
+
+</Project>

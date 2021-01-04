@@ -1,0 +1,23 @@
+﻿.panel-right {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+.panel-right .content{
+    background-color: white;
+}
+
+    .panel-right .content .Textbox {
+        border: 2px solid;
+        border-radius: 4px;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+.content .Textbox .container-1 .search-icon {
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        /*background-image: url('../../content/icon/search.png');*/
+    }
+.icon-search {
+    background-image: url('../../content/icon/search.png');
+}

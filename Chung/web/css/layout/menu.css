@@ -1,0 +1,40 @@
+﻿.menu{
+    width:100%;
+}
+
+.menu .menu_item{
+   display: flex;
+   padding-left: 20px;
+   /*background-color:#e5e5e5;*/
+   align-items: center;
+   height: 40px;
+}
+.menu .menu_item:hover{
+    background-color: #bebebe
+}
+    .menu .menu_item .menu_item-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        /*background-image: url('../../content/icon/dashboard.png');*/
+        background-position: center;
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .menu .menu_item .menu_item-report {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+.menu .menu_item .menu_item-text {
+        margin-left: 10px;
+}
+.icon-dashboard {
+    background-image: url('../../content/icon/dashboard.png');
+}
+
+.icon-report {
+    background-image: url('../../content/icon/dashboard.png');
+}
