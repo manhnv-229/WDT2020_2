@@ -1,0 +1,69 @@
+﻿@import url('layout/header.css');
+@import url('layout/content.css');
+@import url('layout/menu.css');
+@import url('layout/modal.css');
+
+/* width */
+::-webkit-scrollbar {
+	width: 0;
+	height: 6px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+	background: #e5e5e5; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #999999; 
+}
+
+@font-face {
+	font-family: 'GoogleSans-Bold';
+	src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GoogleSans-Italic';
+	src: url('../content/font/GoogleSans-Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GoogleSans-Regular';
+	src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: GoogleSans-Regular;
+	font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+	display: flex;
+}
+
+.container__left {
+	width: 230px;
+	height: 100vh;
+}
+
+.icon {
+	margin: 0 10px 0 16px;
+	width: 28px;
+}
