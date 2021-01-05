@@ -20,7 +20,7 @@
 			float: right;
 			display: flex;
 		}
-	.content .content-form {
+	.content .content-form-search {
 		height: 60px;
 		display: flex;
 		align-items: center;

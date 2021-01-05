@@ -1,24 +1,29 @@
-﻿.content-form1 {
-    background-image: url('../../content/icon/search.png');
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: 16px 10px;
+﻿.content-form-search .content-input {
     height: 40px;
-    width: 350px;
+    width: 200px;
     box-sizing: border-box;
-    padding: 16px;
-    padding-left: 40px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #D2D2D2;
+    margin-right: 10px;
 }
-    .content-form1:focus, #dialog-input:focus{
-        border: 1px solid #2FBE8E;
-        outline: none;
+    .content-form-search .content-input.form1 {
+        height: 40px;
+        width: 350px;
+        background-image: url('../../content/icon/search.png');
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: 16px 10px;
+        padding-left: 40px;
     }
+        .content-input:focus, .dialog-input:focus {
+            border: 1px solid #2FBE8E;
+            outline: none;
+        }
 
 
 
-#dialog-input {
+.dialog-input {
     height: 40px;
     box-sizing: border-box;
     padding-left: 10px;
