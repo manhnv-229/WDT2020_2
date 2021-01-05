@@ -1,0 +1,67 @@
+﻿.container__right {
+	flex: 1;
+	height: 100vh;
+	overflow-x: auto;
+}
+
+.container__right--top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	border-bottom: 1px solid #e9ebee;
+}
+
+.container__right--left {
+	position: relative;
+}
+
+.container__right--left select {
+	margin-left: 16px;
+	padding-left: 8px;
+	border: none;
+	outline: none;
+	min-width: 150px;
+	font-weight: 600;
+}
+
+.container__right--left .title--restaurant {
+	padding-left: 26px;
+}
+
+.container__right--left .title--restaurant i {
+	margin-left: 12px;
+}
+
+.container__right--left .restaurant__menu {
+	list-style-type: none;
+	position: absolute;
+	top: 24px;
+	left: 26px;
+	background-color: #f7f7f7;
+	padding: 0;
+	border-radius: 4px;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.container__right--left .restaurant__menu .restaurant__menu--item {
+	padding: 10px 16px;
+}
+
+.container__right--left .restaurant__menu .restaurant__menu--item:hover {
+	background-color: #e5e5e5;
+}
+
+.container__right--right {
+	display: flex;
+	align-items: center;
+}
+
+.container__right--right span {
+	margin-right: 16px;
+}
+
+.container__right--right .profile img {
+	width: 36px;
+}

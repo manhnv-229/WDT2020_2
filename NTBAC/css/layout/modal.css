@@ -1,0 +1,272 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.modal-add.show,
+.modal-save.show,
+.modal-delete.show,
+.modal-success.show {
+    display: flex;
+}
+
+.modal-success.show {
+    z-index: 10;
+}
+
+.modal__cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 4px;
+    border-radius: 2px;
+    cursor: default;
+}
+
+.focused {
+    border: 1px solid #019160 !important;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__body {
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 700px;
+    height: 100%;
+	overflow-y: auto;
+    margin: 10px auto;
+}
+
+.modal__body--delete,
+.modal__body--success {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 100px;
+    width: 400px;
+}
+
+.content-delete,
+.modal__body--success {
+    padding: 16px;
+}
+
+.content-success #data {
+    color: #ef5353;
+}
+
+.content-delete h3,
+.modal__body--success h3 {
+    margin: 0 0 20px;
+}
+
+.content-delete .btn__respone,
+.content-success .btn__respone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__respome-ok, .btn__respome-no, .btn__ok {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn__ok {
+    background-color: #019160;
+}
+
+.btn__respome-ok {
+    background-color: #ef5353;
+}
+
+.btn__respome-no {
+    margin-left: 20px;
+    background-color: #756d6d;
+}
+
+.btn__respome-ok:hover, .btn__respome-no:hover {
+    border: 2px solid #020202;
+}
+
+.auth-form__header h2 {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.auth-form__header,
+.auth-form__top,
+.auth-form__form--company {
+    padding: 10px 20px 0;
+}
+
+.auth-form__top, 
+.auth-form__form--title, 
+.auth-form__form--save, 
+.auth-form__company--title,
+.form-group .group-input,
+.form-group .group-input .gender {
+    display: flex;
+}
+
+.auth-form__form--avatar {
+    flex: 1;
+}
+
+.auth-form__form--bottom {
+    flex: 3;
+}
+
+.auth-form__form--avatar p {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.auth-form__form--avatar-img {
+    padding: 8px;
+}
+
+.auth-form__form--avatar-img input {
+    display: none;
+}
+
+.auth-form__form--avatar .auth-form__form--avatar-img img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+span.message {
+    display: none;
+    margin-left: 6px;
+}
+
+.auth-form__form--title, 
+.auth-form__form--bottom h4 {
+    margin-left: 20px;
+    position: relative;
+}
+
+.auth-form__form--bottom h4::after {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 4px;
+    background-color: #00ad74;
+    top: 25px;
+    left: 0;
+}
+
+.form-group {
+    margin-left: 10px;
+}
+
+.auth-form__form--title .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin: 4px 0;
+}
+
+.form-group label span {
+    color: #ff0000;
+}
+
+.form-group input, select {
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+}
+
+.form-group select option {
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group .group-input input {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.form-group .group-input .gender {
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form-group.form-group_address {
+    margin-left: 0;
+}
+
+.auth-form__form--save {
+    justify-content: space-between;
+    background-color: #e5e5e5;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.auth-form__form--save .right input {
+    padding: 10px 16px 10px 32px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    outline: none;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.auth-form__form--save .right input#btnAdd {
+    padding: 10px 16px;
+}
+
+.auth-form__form--save .right {
+    position: relative;
+}
+
+.auth-form__form--save .right i {
+    position: absolute;
+    top: 28%;
+    right: 28%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.auth-form__form--save .right input[type=submit] {
+    color: #fff;
+    background-color: #019160;
+}
+

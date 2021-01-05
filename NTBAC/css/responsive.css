@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1200px) {
+    .conten__bottom--list span:last-child {
+        display: block;
+    }
+
+    .conten__bottom--list span:first-child {
+        display: none;
+    }
+
+    .conten__bottom--page-list .conten__bottom--page-item:first-child,
+    .conten__bottom--page-list .conten__bottom--page-item:last-child {
+        display: none;
+    }
+}
