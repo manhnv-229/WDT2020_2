@@ -8,15 +8,8 @@
     display: none;
 }
 
-.modal-add.show,
-.modal-save.show,
-.modal-delete.show,
-.modal-success.show {
+.modal.show {
     display: flex;
-}
-
-.modal-success.show {
-    z-index: 10;
 }
 
 .modal__cancel {
@@ -35,10 +28,6 @@
     cursor: default;
 }
 
-.focused {
-    border: 1px solid #019160 !important;
-}
-
 .modal__overlay {
     position: absolute;
     width: 100%;
@@ -51,66 +40,6 @@
     margin: auto;
     background-color: #fff;
     border-radius: 5px;
-    width: 700px;
-    height: 100%;
-	overflow-y: auto;
-    margin: 10px auto;
-}
-
-.modal__body--delete,
-.modal__body--success {
-    position: relative;
-    background-color: #fff;
-    border-radius: 5px;
-    margin: auto;
-    margin-top: 100px;
-    width: 400px;
-}
-
-.content-delete,
-.modal__body--success {
-    padding: 16px;
-}
-
-.content-success #data {
-    color: #ef5353;
-}
-
-.content-delete h3,
-.modal__body--success h3 {
-    margin: 0 0 20px;
-}
-
-.content-delete .btn__respone,
-.content-success .btn__respone {
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn__respome-ok, .btn__respome-no, .btn__ok {
-    padding: 6px 16px;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-}
-
-.btn__ok {
-    background-color: #019160;
-}
-
-.btn__respome-ok {
-    background-color: #ef5353;
-}
-
-.btn__respome-no {
-    margin-left: 20px;
-    background-color: #756d6d;
-}
-
-.btn__respome-ok:hover, .btn__respome-no:hover {
-    border: 2px solid #020202;
 }
 
 .auth-form__header h2 {
@@ -121,7 +50,7 @@
 .auth-form__header,
 .auth-form__top,
 .auth-form__form--company {
-    padding: 10px 20px 0;
+    padding: 20px 20px 0;
 }
 
 .auth-form__top, 
@@ -134,11 +63,8 @@
 }
 
 .auth-form__form--avatar {
-    flex: 1;
-}
-
-.auth-form__form--bottom {
-    flex: 3;
+    width: 180px;
+    height: 180px;
 }
 
 .auth-form__form--avatar p {
@@ -146,11 +72,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
-    margin: 0;
+    padding: 0 4px;
 }
 
 .auth-form__form--avatar-img {
-    padding: 8px;
+    padding: 0 20px;
 }
 
 .auth-form__form--avatar-img input {
@@ -159,37 +85,18 @@
 
 .auth-form__form--avatar .auth-form__form--avatar-img img {
     width: 100%;
+    height: 140px;
     object-fit: cover;
     border: 1px solid #e5e5e5;
     border-radius: 50%;
 }
 
-span.message {
-    display: none;
-    margin-left: 6px;
-}
-
-.auth-form__form--title, 
-.auth-form__form--bottom h4 {
-    margin-left: 20px;
-    position: relative;
-}
-
-.auth-form__form--bottom h4::after {
-    position: absolute;
-    content: "";
-    width: 72px;
-    height: 4px;
-    background-color: #00ad74;
-    top: 25px;
-    left: 0;
-}
-
-.form-group {
+.form-group:last-child {
     margin-left: 10px;
+    flex: 1;
 }
 
-.auth-form__form--title .form-group {
+.form-group.dob {
     flex: 1;
 }
 
@@ -210,7 +117,7 @@ span.message {
     margin-bottom: 10px;
     width: 100%;
     padding-left: 10px;
-    outline: none;
+    outline-color: #b42222;
 }
 
 .form-group select option {
@@ -228,6 +135,18 @@ span.message {
     margin-right: 10px;
 }
 
+.form-group .group-input .gender:last-child {
+    margin-right: 0;
+}
+
+.auth-form__company--title .form-group:first-child {
+    flex: 2;
+}
+
+.auth-form__company--title .form-group:last-child {
+    flex: 1;
+}
+
 .form-group.form-group_address {
     margin-left: 0;
 }
@@ -235,12 +154,12 @@ span.message {
 .auth-form__form--save {
     justify-content: space-between;
     background-color: #e5e5e5;
-    margin: 10px 0;
-    padding: 10px 20px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .auth-form__form--save .right input {
-    padding: 10px 16px 10px 32px;
+    padding: 10px 16px;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     background-color: #e5e5e5;
@@ -249,24 +168,7 @@ span.message {
     cursor: pointer;
 }
 
-.auth-form__form--save .right input#btnAdd {
-    padding: 10px 16px;
-}
-
-.auth-form__form--save .right {
-    position: relative;
-}
-
-.auth-form__form--save .right i {
-    position: absolute;
-    top: 28%;
-    right: 28%;
-    font-size: 16px;
-    color: #fff;
-}
-
 .auth-form__form--save .right input[type=submit] {
     color: #fff;
     background-color: #019160;
 }
-

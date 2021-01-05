@@ -5,7 +5,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-	width: 3px;
+	width: 0;
 	height: 6px;
 }
   
@@ -51,7 +51,7 @@ body {
 	font-family: GoogleSans-Regular;
 	font-size: 13px;
     padding: 0;
-	margin: 0;
+    margin: 0;
 }
 
 .container {
@@ -65,5 +65,5 @@ body {
 
 .icon {
 	margin: 0 10px 0 16px;
-	width: 24px;
+	width: 28px;
 }
